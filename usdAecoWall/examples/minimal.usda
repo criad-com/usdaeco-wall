@@ -1,0 +1,197 @@
+#usda 1.0
+(
+    defaultPrim = "WallCorner"
+    fallbackPrimTypes = {
+        token[] AecoFacility = ["Xform"]
+        token[] AecoLevel = ["Xform"]
+    }
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "WallCorner"
+{
+    def AecoFacility "Facility" (
+        prepend apiSchemas = ["AecoClassificationAPI:ifc"]
+    )
+    {
+        string aeco:class:ifc:code = "IfcBuilding"
+        string aeco:id = "41c088a8-f96a-56a1-a9ab-2d10686a6975"
+
+        def AecoLevel "Level" (
+            prepend apiSchemas = ["AecoClassificationAPI:ifc"]
+        )
+        {
+            string aeco:class:ifc:code = "IfcBuildingStorey"
+            double aeco:elevation = 0
+            string aeco:id = "95d8fd79-1a64-5fb2-827c-857d921cbd89"
+
+            def Xform "Main" (
+                prepend apiSchemas = ["AecoElementAPI", "AecoClassificationAPI:ifc", "AecoWallAPI", "AecoAxisAPI"]
+                prepend inherits = </_TypeCatalog/LayeredWall>
+            )
+            {
+                double3 aeco:axis:end = (4, 0, 0)
+                double aeco:axis:length = 4
+                double3 aeco:axis:start = (0, 0, 0)
+                string aeco:class:ifc:code = "IfcWall"
+                string aeco:id = "49d349e5-34e9-5538-b666-d28986839a87"
+                rel aeco:wall:baseLevel = </WallCorner/Facility/Level>
+                double aeco:wall:grossSideArea = 12
+                double aeco:wall:grossVolume = 2.4000000000000004
+                double aeco:wall:height = 3
+                prepend rel aeco:wall:joinAlongPath = </WallCorner/Facility/Level/Branch>
+                prepend rel aeco:wall:joinAtEnd = </WallCorner/Facility/Level/Corner>
+                uniform token aeco:wall:locationLine = "finishFaceExterior"
+                double aeco:wall:netSideArea = 10.11
+                double aeco:wall:netVolume = 2.022
+                double aeco:wall:thickness = 0.2
+                matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )
+                uniform token[] xformOpOrder = ["xformOp:transform"]
+
+                def BasisCurves "Axis" (
+                    prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+                )
+                {
+                    double aeco:derived:tolerance = 1e-9
+                    uniform token aeco:derived:approx = "exact"
+                    uniform token aeco:derived:role = "axis"
+                    string aeco:derived:source = "49d349e5-34e9-5538-b666-d28986839a87"
+                    string aeco:derived:stamp = "wall example 0.1.0"
+                    int[] curveVertexCounts = [2]
+                    point3f[] points = [(0, 0, 0), (4, 0, 0)]
+                    uniform token purpose = "guide"
+                    uniform token type = "linear"
+                    float[] widths = [0.01] (
+                        interpolation = "constant"
+                    )
+                    uniform token wrap = "nonperiodic"
+                }
+
+                def Xform "Opening" (
+                    prepend apiSchemas = ["AecoElementAPI", "AecoClassificationAPI:ifc", "AecoOpeningAPI"]
+                )
+                {
+                    string aeco:class:ifc:code = "IfcOpeningElement"
+                    string aeco:id = "73de8cf7-96fb-531a-82cd-7cbacbe08ed9"
+                    rel aeco:opening:filling = </WallCorner/Facility/Level/Door>
+                    double aeco:opening:height = 2.1
+                    rel aeco:opening:host = </WallCorner/Facility/Level/Main>
+                    double aeco:opening:sillHeight = 0
+                    double aeco:opening:width = 0.9
+                    double3 xformOp:translate = (1, 0.1, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate"]
+                }
+            }
+
+            def Xform "Corner" (
+                prepend apiSchemas = ["AecoElementAPI", "AecoClassificationAPI:ifc", "AecoWallAPI", "AecoAxisAPI"]
+                prepend inherits = </_TypeCatalog/LayeredWall>
+            )
+            {
+                double3 aeco:axis:end = (3, 0, 0)
+                double aeco:axis:length = 3
+                double3 aeco:axis:start = (0, 0, 0)
+                string aeco:class:ifc:code = "IfcWall"
+                string aeco:id = "894d9a89-d43b-5f72-965b-cd8bbe381ec6"
+                rel aeco:wall:baseLevel = </WallCorner/Facility/Level>
+                double aeco:wall:grossSideArea = 9
+                double aeco:wall:grossVolume = 1.8
+                double aeco:wall:height = 3
+                prepend rel aeco:wall:joinAtStart = </WallCorner/Facility/Level/Main>
+                uniform token aeco:wall:locationLine = "finishFaceExterior"
+                double aeco:wall:netSideArea = 9
+                double aeco:wall:netVolume = 1.8
+                double aeco:wall:thickness = 0.2
+                matrix4d xformOp:transform = ( (2.220446049250313e-16, 1, 0, 0), (-1, 2.220446049250313e-16, 0, 0), (0, 0, 1, 0), (4, 0, 0, 1) )
+                uniform token[] xformOpOrder = ["xformOp:transform"]
+
+                def BasisCurves "Axis" (
+                    prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+                )
+                {
+                    double aeco:derived:tolerance = 1e-9
+                    uniform token aeco:derived:approx = "exact"
+                    uniform token aeco:derived:role = "axis"
+                    string aeco:derived:source = "894d9a89-d43b-5f72-965b-cd8bbe381ec6"
+                    string aeco:derived:stamp = "wall example 0.1.0"
+                    int[] curveVertexCounts = [2]
+                    point3f[] points = [(0, 0, 0), (3, 0, 0)]
+                    uniform token purpose = "guide"
+                    uniform token type = "linear"
+                    float[] widths = [0.01] (
+                        interpolation = "constant"
+                    )
+                    uniform token wrap = "nonperiodic"
+                }
+            }
+
+            def Xform "Branch" (
+                prepend apiSchemas = ["AecoElementAPI", "AecoClassificationAPI:ifc", "AecoWallAPI", "AecoAxisAPI"]
+                prepend inherits = </_TypeCatalog/LayeredWall>
+            )
+            {
+                double3 aeco:axis:end = (2, 0, 0)
+                double aeco:axis:length = 2
+                double3 aeco:axis:start = (0, 0, 0)
+                string aeco:class:ifc:code = "IfcWall"
+                string aeco:id = "d18f4469-dbef-55b4-8f65-788f1e77073a"
+                rel aeco:wall:baseLevel = </WallCorner/Facility/Level>
+                double aeco:wall:grossSideArea = 6
+                double aeco:wall:grossVolume = 1.2000000000000002
+                double aeco:wall:height = 3
+                prepend rel aeco:wall:joinAtEnd = </WallCorner/Facility/Level/Main>
+                uniform token aeco:wall:locationLine = "finishFaceExterior"
+                double aeco:wall:netSideArea = 6
+                double aeco:wall:netVolume = 1.2000000000000002
+                double aeco:wall:thickness = 0.2
+                matrix4d xformOp:transform = ( (2.220446049250313e-16, 1, 0, 0), (-1, 2.220446049250313e-16, 0, 0), (0, 0, 1, 0), (2, -2, 0, 1) )
+                uniform token[] xformOpOrder = ["xformOp:transform"]
+
+                def BasisCurves "Axis" (
+                    prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+                )
+                {
+                    double aeco:derived:tolerance = 1e-9
+                    uniform token aeco:derived:approx = "exact"
+                    uniform token aeco:derived:role = "axis"
+                    string aeco:derived:source = "d18f4469-dbef-55b4-8f65-788f1e77073a"
+                    string aeco:derived:stamp = "wall example 0.1.0"
+                    int[] curveVertexCounts = [2]
+                    point3f[] points = [(0, 0, 0), (2, 0, 0)]
+                    uniform token purpose = "guide"
+                    uniform token type = "linear"
+                    float[] widths = [0.01] (
+                        interpolation = "constant"
+                    )
+                    uniform token wrap = "nonperiodic"
+                }
+            }
+
+            def Xform "Door" (
+                prepend apiSchemas = ["AecoElementAPI", "AecoClassificationAPI:ifc"]
+            )
+            {
+                string aeco:class:ifc:code = "IfcDoor"
+                string aeco:id = "5dcd1d0c-ead2-5d3c-b54b-6b272790da2e"
+                double3 xformOp:translate = (1, 0.1, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+        }
+    }
+}
+
+class "_TypeCatalog"
+{
+    class "LayeredWall" (
+        prepend apiSchemas = ["AecoTypeAPI", "AecoBuildUpAPI"]
+    )
+    {
+        token[] aeco:buildUp:functions = ["finish", "structure", "finish"]
+        string[] aeco:buildUp:materials = ["Plaster", "Masonry", "Plaster"]
+        int[] aeco:buildUp:priorities = [10, 50, 10]
+        double[] aeco:buildUp:thicknesses = [0.02, 0.16, 0.02]
+        double aeco:buildUp:totalThickness = 0.2
+    }
+}
+

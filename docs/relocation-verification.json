@@ -1,0 +1,977 @@
+{
+  "version": "0.2.3",
+  "toolchain": "0.3.6",
+  "pytest_passed": 24,
+  "layouts": {
+    "original": {
+      "checks": [
+        {
+          "name": "core validators loaded through UsdValidation",
+          "ok": true,
+          "detail": "8/8 loaded"
+        },
+        {
+          "name": "profile example conformance",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "plugin requirements",
+          "ok": true,
+          "detail": "usdAeco 0.9.2, usdAecoAxis 0.1.2, usdAecoBuildUp 0.2.1, usdAecoWall 0.2.3"
+        },
+        {
+          "name": "schema registry",
+          "ok": true,
+          "detail": "4 applied APIs, 0 concrete types resolve"
+        },
+        {
+          "name": "codeless manifest with three dependencies",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "CanApplyAPI restrictions",
+          "ok": true,
+          "detail": "10 cases passed"
+        },
+        {
+          "name": "27 properties; five derived flags; conditional height unflagged",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "every property documented; build-up schema sublayered",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "joins are relationships; E6 port graph unchanged",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "six validators registered idempotently",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "examples compose and validate",
+          "ok": true,
+          "detail": "1 examples, 0 errors (expected 0), 0 warnings"
+        },
+        {
+          "name": "core validators detect seeded missing identity",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "example has L/T joins, door and inherited three-layer catalog",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "example has zero errors and zero warnings",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "seed WallKindMismatch detected as Warn",
+          "ok": true,
+          "detail": "{('WallKindMismatch', 'Warn'): 1}"
+        },
+        {
+          "name": "seed WallMissingAxis detected as Error",
+          "ok": true,
+          "detail": "{('WallMissingAxis', 'Error'): 1}"
+        },
+        {
+          "name": "seed WallJoinAsymmetric detected as Warn",
+          "ok": true,
+          "detail": "{('WallJoinAsymmetric', 'Warn'): 1}"
+        },
+        {
+          "name": "seed WallJoinedEndExtended detected as Warn",
+          "ok": true,
+          "detail": "{('WallJoinedEndExtended', 'Warn'): 1}"
+        },
+        {
+          "name": "seed WallOpeningOutsideHost detected as Error",
+          "ok": true,
+          "detail": "{('WallJoinedEndExtended', 'Warn'): 3, ('WallOpeningOutsideHost', 'Error'): 1}"
+        },
+        {
+          "name": "seed WallSizeMismatch detected as Warn",
+          "ok": true,
+          "detail": "{('WallSizeMismatch', 'Warn'): 1}"
+        },
+        {
+          "name": "opening width crossing start caught despite origin inside",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "joined-face tolerance avoids small numerical warnings",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "geometry validators invariant under parent rigid transform",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "missing and old build-up refused",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "vanilla example probe",
+          "ok": true,
+          "detail": "11 world transforms identical; no family plugins; fallbacks, inherited section and joins readable"
+        },
+        {
+          "name": "metres importer APIs, axis reuse and reciprocal joins",
+          "ok": true,
+          "detail": "{\"AecoBuildUpAPI\": 1, \"AecoOpeningAPI\": 1, \"AecoWallAPI\": 2, \"axesReused\": 2, \"catalogsCreated\": 0, \"fillings\": 1, \"joinTargets\": 2, \"layerFunctionsOther\": 0, \"missingAxes\": 0, \"openingDimensionsUnavailable\": 0, \"propsBlocked\": 12, \"unmatched\": 0, \"unsupportedJoins\": 0, \"unsupportedLocationLines\": 0}"
+        },
+        {
+          "name": "metres imported stage validates",
+          "ok": true,
+          "detail": "0 errors, 0 warnings"
+        },
+        {
+          "name": "metres SI dimensions and property promotion",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "metres input files unchanged and no axis opinions in kind",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "metres opening dimensions and placement",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "metres promoted net and gross quantities",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "metres muting kind recovers core composition",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "new output refusal",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "vanilla importer probe",
+          "ok": true,
+          "detail": "imported layered stage composes without plugins"
+        },
+        {
+          "name": "aeco-wall-import CLI",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "all six location lines in both direction senses",
+          "ok": true,
+          "detail": "12 IFC usage mappings"
+        },
+        {
+          "name": "arbitrary usage offset blocked and counted",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "millimetres importer APIs, axis reuse and reciprocal joins",
+          "ok": true,
+          "detail": "{\"AecoBuildUpAPI\": 1, \"AecoOpeningAPI\": 1, \"AecoWallAPI\": 2, \"axesReused\": 2, \"catalogsCreated\": 0, \"fillings\": 1, \"joinTargets\": 2, \"layerFunctionsOther\": 0, \"missingAxes\": 0, \"openingDimensionsUnavailable\": 0, \"propsBlocked\": 12, \"unmatched\": 0, \"unsupportedJoins\": 0, \"unsupportedLocationLines\": 0}"
+        },
+        {
+          "name": "millimetres imported stage validates",
+          "ok": true,
+          "detail": "0 errors, 0 warnings"
+        },
+        {
+          "name": "millimetres SI dimensions and property promotion",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "millimetres input files unchanged and no axis opinions in kind",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "millimetres opening dimensions and placement",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "millimetres promoted net and gross quantities",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "millimetres muting kind recovers core composition",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "schema unchanged from v0.1.2 via Sdf",
+          "ok": true,
+          "detail": "27 property names, types, defaults, variability, custom flags, allowed tokens and derived flags"
+        },
+        {
+          "name": "validator listing uses plugin names and schema types",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "example harness",
+          "ok": true,
+          "detail": "findings and committed result match; 12375 plugin-free prims; 1 non-blank renders; source pinned; elapsed 13.990s / budget 180s"
+        },
+        {
+          "name": "example source is pinned clash release",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "published census and promotion coverage",
+          "ok": true,
+          "detail": "92 walls"
+        },
+        {
+          "name": "stage importer separates drivers and derived quantities",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "promotion preserves all published mesh topology and transforms",
+          "ok": true,
+          "detail": "3015 meshes unchanged"
+        },
+        {
+          "name": "office wall axes only in dedicated derivation",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "review excludes every extent guide and requests all purposes",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "published example composes plugin-free",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "local documentation links",
+          "ok": true,
+          "detail": "12 links resolve (anchors and remote URLs skipped)"
+        },
+        {
+          "name": "local documentation links",
+          "ok": true,
+          "detail": "12 links resolve (anchors and remote URLs skipped)"
+        },
+        {
+          "name": "local documentation links",
+          "ok": true,
+          "detail": "10 links resolve (anchors and remote URLs skipped)"
+        },
+        {
+          "name": "term sweep",
+          "ok": true,
+          "detail": "57 text files, no matches"
+        },
+        {
+          "name": "S01",
+          "ok": true,
+          "detail": "MIT (inferred)"
+        },
+        {
+          "name": "S02",
+          "ok": true,
+          "detail": "readme"
+        },
+        {
+          "name": "S03",
+          "ok": true,
+          "detail": "metadata"
+        },
+        {
+          "name": "S04",
+          "ok": true,
+          "detail": "dependency pins"
+        },
+        {
+          "name": "S05",
+          "ok": true,
+          "detail": "flake"
+        },
+        {
+          "name": "S06",
+          "ok": true,
+          "detail": "layout"
+        },
+        {
+          "name": "S07",
+          "ok": true,
+          "detail": "global metadata"
+        },
+        {
+          "name": "S08",
+          "ok": true,
+          "detail": "classes"
+        },
+        {
+          "name": "S09",
+          "ok": true,
+          "detail": "namespaces"
+        },
+        {
+          "name": "S10",
+          "ok": true,
+          "detail": "applicability"
+        },
+        {
+          "name": "S11",
+          "ok": true,
+          "detail": "usdGenSchema --validate clean; compiler compatibility only"
+        },
+        {
+          "name": "S12",
+          "ok": true,
+          "detail": "resource plugin"
+        },
+        {
+          "name": "S13",
+          "ok": true,
+          "detail": "user docs"
+        },
+        {
+          "name": "S14",
+          "ok": true,
+          "detail": "validator descriptor"
+        },
+        {
+          "name": "S15",
+          "ok": true,
+          "detail": "validator tokens"
+        },
+        {
+          "name": "S16",
+          "ok": true,
+          "detail": "6 validators discovered and loaded"
+        },
+        {
+          "name": "S17",
+          "ok": true,
+          "detail": "tests"
+        },
+        {
+          "name": "S18",
+          "ok": true,
+          "detail": "companion"
+        },
+        {
+          "name": "S19",
+          "ok": true,
+          "detail": "profile"
+        },
+        {
+          "name": "S20",
+          "ok": true,
+          "detail": "usecase"
+        },
+        {
+          "name": "S21",
+          "ok": true,
+          "detail": "example files"
+        },
+        {
+          "name": "S22",
+          "ok": true,
+          "detail": "example manifest"
+        },
+        {
+          "name": "S23",
+          "ok": true,
+          "detail": "render caps"
+        },
+        {
+          "name": "S24",
+          "ok": true,
+          "detail": "1 stage roots compose without family plugins"
+        },
+        {
+          "name": "S25",
+          "ok": true,
+          "detail": "terms"
+        },
+        {
+          "name": "S26",
+          "ok": true,
+          "detail": "check contract"
+        },
+        {
+          "name": "S27",
+          "ok": true,
+          "detail": "12375 prims, 0 composition errors in relocated plugin-free result"
+        },
+        {
+          "name": "S28",
+          "ok": true,
+          "detail": "stock Embree render: 1280x800, 80464 bytes, non-uniform"
+        },
+        {
+          "name": "S29",
+          "ok": true,
+          "detail": "2 asset paths use example inputs/, archived layers or documented resolver tokens"
+        }
+      ],
+      "failed": 0,
+      "importer": {
+        "metres": {
+          "AecoWallAPI": 2,
+          "AecoOpeningAPI": 1,
+          "AecoBuildUpAPI": 1,
+          "axesReused": 2,
+          "missingAxes": 0,
+          "joinTargets": 2,
+          "unsupportedJoins": 0,
+          "unsupportedLocationLines": 0,
+          "propsBlocked": 12,
+          "unmatched": 0,
+          "fillings": 1,
+          "openingDimensionsUnavailable": 0,
+          "catalogsCreated": 0,
+          "layerFunctionsOther": 0
+        },
+        "millimetres": {
+          "AecoWallAPI": 2,
+          "AecoOpeningAPI": 1,
+          "AecoBuildUpAPI": 1,
+          "axesReused": 2,
+          "missingAxes": 0,
+          "joinTargets": 2,
+          "unsupportedJoins": 0,
+          "unsupportedLocationLines": 0,
+          "propsBlocked": 12,
+          "unmatched": 0,
+          "fillings": 1,
+          "openingDimensionsUnavailable": 0,
+          "catalogsCreated": 0,
+          "layerFunctionsOther": 0
+        }
+      },
+      "behavioral": {
+        "checks": 58,
+        "failed": 0
+      },
+      "structure": {
+        "checks": 29,
+        "failed": 0
+      }
+    },
+    "relocated": {
+      "checks": [
+        {
+          "name": "core validators loaded through UsdValidation",
+          "ok": true,
+          "detail": "8/8 loaded"
+        },
+        {
+          "name": "profile example conformance",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "plugin requirements",
+          "ok": true,
+          "detail": "usdAeco 0.9.2, usdAecoAxis 0.1.2, usdAecoBuildUp 0.2.1, usdAecoWall 0.2.3"
+        },
+        {
+          "name": "schema registry",
+          "ok": true,
+          "detail": "4 applied APIs, 0 concrete types resolve"
+        },
+        {
+          "name": "codeless manifest with three dependencies",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "CanApplyAPI restrictions",
+          "ok": true,
+          "detail": "10 cases passed"
+        },
+        {
+          "name": "27 properties; five derived flags; conditional height unflagged",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "every property documented; build-up schema sublayered",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "joins are relationships; E6 port graph unchanged",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "six validators registered idempotently",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "examples compose and validate",
+          "ok": true,
+          "detail": "1 examples, 0 errors (expected 0), 0 warnings"
+        },
+        {
+          "name": "core validators detect seeded missing identity",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "example has L/T joins, door and inherited three-layer catalog",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "example has zero errors and zero warnings",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "seed WallKindMismatch detected as Warn",
+          "ok": true,
+          "detail": "{('WallKindMismatch', 'Warn'): 1}"
+        },
+        {
+          "name": "seed WallMissingAxis detected as Error",
+          "ok": true,
+          "detail": "{('WallMissingAxis', 'Error'): 1}"
+        },
+        {
+          "name": "seed WallJoinAsymmetric detected as Warn",
+          "ok": true,
+          "detail": "{('WallJoinAsymmetric', 'Warn'): 1}"
+        },
+        {
+          "name": "seed WallJoinedEndExtended detected as Warn",
+          "ok": true,
+          "detail": "{('WallJoinedEndExtended', 'Warn'): 1}"
+        },
+        {
+          "name": "seed WallOpeningOutsideHost detected as Error",
+          "ok": true,
+          "detail": "{('WallJoinedEndExtended', 'Warn'): 3, ('WallOpeningOutsideHost', 'Error'): 1}"
+        },
+        {
+          "name": "seed WallSizeMismatch detected as Warn",
+          "ok": true,
+          "detail": "{('WallSizeMismatch', 'Warn'): 1}"
+        },
+        {
+          "name": "opening width crossing start caught despite origin inside",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "joined-face tolerance avoids small numerical warnings",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "geometry validators invariant under parent rigid transform",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "missing and old build-up refused",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "vanilla example probe",
+          "ok": true,
+          "detail": "11 world transforms identical; no family plugins; fallbacks, inherited section and joins readable"
+        },
+        {
+          "name": "metres importer APIs, axis reuse and reciprocal joins",
+          "ok": true,
+          "detail": "{\"AecoBuildUpAPI\": 1, \"AecoOpeningAPI\": 1, \"AecoWallAPI\": 2, \"axesReused\": 2, \"catalogsCreated\": 0, \"fillings\": 1, \"joinTargets\": 2, \"layerFunctionsOther\": 0, \"missingAxes\": 0, \"openingDimensionsUnavailable\": 0, \"propsBlocked\": 12, \"unmatched\": 0, \"unsupportedJoins\": 0, \"unsupportedLocationLines\": 0}"
+        },
+        {
+          "name": "metres imported stage validates",
+          "ok": true,
+          "detail": "0 errors, 0 warnings"
+        },
+        {
+          "name": "metres SI dimensions and property promotion",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "metres input files unchanged and no axis opinions in kind",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "metres opening dimensions and placement",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "metres promoted net and gross quantities",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "metres muting kind recovers core composition",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "new output refusal",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "vanilla importer probe",
+          "ok": true,
+          "detail": "imported layered stage composes without plugins"
+        },
+        {
+          "name": "aeco-wall-import CLI",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "all six location lines in both direction senses",
+          "ok": true,
+          "detail": "12 IFC usage mappings"
+        },
+        {
+          "name": "arbitrary usage offset blocked and counted",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "millimetres importer APIs, axis reuse and reciprocal joins",
+          "ok": true,
+          "detail": "{\"AecoBuildUpAPI\": 1, \"AecoOpeningAPI\": 1, \"AecoWallAPI\": 2, \"axesReused\": 2, \"catalogsCreated\": 0, \"fillings\": 1, \"joinTargets\": 2, \"layerFunctionsOther\": 0, \"missingAxes\": 0, \"openingDimensionsUnavailable\": 0, \"propsBlocked\": 12, \"unmatched\": 0, \"unsupportedJoins\": 0, \"unsupportedLocationLines\": 0}"
+        },
+        {
+          "name": "millimetres imported stage validates",
+          "ok": true,
+          "detail": "0 errors, 0 warnings"
+        },
+        {
+          "name": "millimetres SI dimensions and property promotion",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "millimetres input files unchanged and no axis opinions in kind",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "millimetres opening dimensions and placement",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "millimetres promoted net and gross quantities",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "millimetres muting kind recovers core composition",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "schema unchanged from v0.1.2 via Sdf",
+          "ok": true,
+          "detail": "27 property names, types, defaults, variability, custom flags, allowed tokens and derived flags"
+        },
+        {
+          "name": "validator listing uses plugin names and schema types",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "example harness",
+          "ok": true,
+          "detail": "findings and committed result match; 12375 plugin-free prims; 1 non-blank renders; source pinned; elapsed 13.842s / budget 180s"
+        },
+        {
+          "name": "example source is pinned clash release",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "published census and promotion coverage",
+          "ok": true,
+          "detail": "92 walls"
+        },
+        {
+          "name": "stage importer separates drivers and derived quantities",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "promotion preserves all published mesh topology and transforms",
+          "ok": true,
+          "detail": "3015 meshes unchanged"
+        },
+        {
+          "name": "office wall axes only in dedicated derivation",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "review excludes every extent guide and requests all purposes",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "published example composes plugin-free",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "local documentation links",
+          "ok": true,
+          "detail": "12 links resolve (anchors and remote URLs skipped)"
+        },
+        {
+          "name": "local documentation links",
+          "ok": true,
+          "detail": "12 links resolve (anchors and remote URLs skipped)"
+        },
+        {
+          "name": "local documentation links",
+          "ok": true,
+          "detail": "10 links resolve (anchors and remote URLs skipped)"
+        },
+        {
+          "name": "term sweep",
+          "ok": true,
+          "detail": "57 text files, no matches"
+        },
+        {
+          "name": "S01",
+          "ok": true,
+          "detail": "MIT (inferred)"
+        },
+        {
+          "name": "S02",
+          "ok": true,
+          "detail": "readme"
+        },
+        {
+          "name": "S03",
+          "ok": true,
+          "detail": "metadata"
+        },
+        {
+          "name": "S04",
+          "ok": true,
+          "detail": "dependency pins"
+        },
+        {
+          "name": "S05",
+          "ok": true,
+          "detail": "flake"
+        },
+        {
+          "name": "S06",
+          "ok": true,
+          "detail": "layout"
+        },
+        {
+          "name": "S07",
+          "ok": true,
+          "detail": "global metadata"
+        },
+        {
+          "name": "S08",
+          "ok": true,
+          "detail": "classes"
+        },
+        {
+          "name": "S09",
+          "ok": true,
+          "detail": "namespaces"
+        },
+        {
+          "name": "S10",
+          "ok": true,
+          "detail": "applicability"
+        },
+        {
+          "name": "S11",
+          "ok": true,
+          "detail": "usdGenSchema --validate clean; compiler compatibility only"
+        },
+        {
+          "name": "S12",
+          "ok": true,
+          "detail": "resource plugin"
+        },
+        {
+          "name": "S13",
+          "ok": true,
+          "detail": "user docs"
+        },
+        {
+          "name": "S14",
+          "ok": true,
+          "detail": "validator descriptor"
+        },
+        {
+          "name": "S15",
+          "ok": true,
+          "detail": "validator tokens"
+        },
+        {
+          "name": "S16",
+          "ok": true,
+          "detail": "6 validators discovered and loaded"
+        },
+        {
+          "name": "S17",
+          "ok": true,
+          "detail": "tests"
+        },
+        {
+          "name": "S18",
+          "ok": true,
+          "detail": "companion"
+        },
+        {
+          "name": "S19",
+          "ok": true,
+          "detail": "profile"
+        },
+        {
+          "name": "S20",
+          "ok": true,
+          "detail": "usecase"
+        },
+        {
+          "name": "S21",
+          "ok": true,
+          "detail": "example files"
+        },
+        {
+          "name": "S22",
+          "ok": true,
+          "detail": "example manifest"
+        },
+        {
+          "name": "S23",
+          "ok": true,
+          "detail": "render caps"
+        },
+        {
+          "name": "S24",
+          "ok": true,
+          "detail": "1 stage roots compose without family plugins"
+        },
+        {
+          "name": "S25",
+          "ok": true,
+          "detail": "terms"
+        },
+        {
+          "name": "S26",
+          "ok": true,
+          "detail": "check contract"
+        },
+        {
+          "name": "S27",
+          "ok": true,
+          "detail": "12375 prims, 0 composition errors in relocated plugin-free result"
+        },
+        {
+          "name": "S28",
+          "ok": true,
+          "detail": "stock Embree render: 1280x800, 80464 bytes, non-uniform"
+        },
+        {
+          "name": "S29",
+          "ok": true,
+          "detail": "2 asset paths use example inputs/, archived layers or documented resolver tokens"
+        }
+      ],
+      "failed": 0,
+      "importer": {
+        "metres": {
+          "AecoWallAPI": 2,
+          "AecoOpeningAPI": 1,
+          "AecoBuildUpAPI": 1,
+          "axesReused": 2,
+          "missingAxes": 0,
+          "joinTargets": 2,
+          "unsupportedJoins": 0,
+          "unsupportedLocationLines": 0,
+          "propsBlocked": 12,
+          "unmatched": 0,
+          "fillings": 1,
+          "openingDimensionsUnavailable": 0,
+          "catalogsCreated": 0,
+          "layerFunctionsOther": 0
+        },
+        "millimetres": {
+          "AecoWallAPI": 2,
+          "AecoOpeningAPI": 1,
+          "AecoBuildUpAPI": 1,
+          "axesReused": 2,
+          "missingAxes": 0,
+          "joinTargets": 2,
+          "unsupportedJoins": 0,
+          "unsupportedLocationLines": 0,
+          "propsBlocked": 12,
+          "unmatched": 0,
+          "fillings": 1,
+          "openingDimensionsUnavailable": 0,
+          "catalogsCreated": 0,
+          "layerFunctionsOther": 0
+        }
+      },
+      "behavioral": {
+        "checks": 58,
+        "failed": 0
+      },
+      "structure": {
+        "checks": 29,
+        "failed": 0
+      }
+    }
+  },
+  "archived_layer_probe": {
+    "repo": "wall",
+    "archived_entry": "wall.drivers.usda",
+    "prim_count": 12354,
+    "composition_errors": 0
+  }
+}

@@ -1,0 +1,3 @@
+# Preserve the trailing separator line emitted by USD schema/stage writers.
+plugins/**/generatedSchema.usda whitespace=-blank-at-eof
+examples/wall_corner.usda whitespace=-blank-at-eof

@@ -1,0 +1,46 @@
+{
+  "Plugins": [
+    {
+      "Type": "python",
+      "Name": "usdAecoWallValidators",
+      "Root": ".",
+      "Info": {
+        "Validators": {
+          "keywords": [
+            "UsdAecoWallValidators"
+          ],
+          "WallKindMismatchChecker": {
+            "doc": "WallKindMismatch; retained wall rule with default-time evaluation.",
+            "schemaTypes": [
+              "UsdAecoWallWallAPI"
+            ]
+          },
+          "WallMissingAxisChecker": {
+            "doc": "WallMissingAxis; retained wall rule with default-time evaluation.",
+            "schemaTypes": [
+              "UsdAecoWallWallAPI"
+            ]
+          },
+          "WallJoinAsymmetricChecker": {
+            "doc": "WallJoinAsymmetric; retained wall rule with default-time evaluation.",
+            "schemaTypes": [
+              "UsdAecoWallWallAPI"
+            ]
+          },
+          "WallJoinedEndExtendedChecker": {
+            "doc": "WallJoinedEndExtended; retained wall rule with default-time evaluation."
+          },
+          "WallOpeningOutsideHostChecker": {
+            "doc": "WallOpeningOutsideHost; retained wall rule with default-time evaluation."
+          },
+          "WallSizeMismatchChecker": {
+            "doc": "WallSizeMismatch; retained wall rule with default-time evaluation.",
+            "schemaTypes": [
+              "UsdAecoWallWallAPI"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "wall",
+  "description": "Default severities for the shipped wall validators.",
+  "include_builtin": true,
+  "severity_overrides": {
+    "WallKindMismatch": "warn",
+    "WallMissingAxis": "error",
+    "WallJoinAsymmetric": "warn",
+    "WallJoinedEndExtended": "warn",
+    "WallOpeningOutsideHost": "error",
+    "WallSizeMismatch": "warn"
+  },
+  "keywords": [
+    "UsdAecoWallValidators"
+  ]
+}

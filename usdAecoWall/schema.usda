@@ -1,0 +1,123 @@
+#usda 1.0
+(
+    subLayers = [@usd/schema.usda@, @usdGeom/schema.usda@, @usdAeco/schema.usda@, @usdAecoBuildUp/schema.usda@]
+)
+over "GLOBAL" (
+    customData = {
+        string libraryName = "usdAecoWall"
+        string libraryPath = "."
+        bool skipCodeGeneration = true
+        bool useLiteralIdentifier = true
+    }
+) {}
+
+class "AecoWallAPI" (
+    inherits = </APISchemaBase>
+    doc = "Wall occurrence beside AecoElementAPI and AecoAxisAPI. Kind is classification. Dimensional properties are SI."
+    customData = {
+        string className = "WallAPI"
+        token apiSchemaType = "singleApply"
+        token[] apiSchemaCanOnlyApplyTo = ["Imageable"]
+    }
+) {
+    uniform token aeco:wall:locationLine = "centerline" (
+        doc = "DRIVER. Position of the reference axis within the layered section."
+        allowedTokens = ["centerline", "coreCenterline", "finishFaceExterior", "finishFaceInterior", "coreFaceExterior", "coreFaceInterior"]
+    )
+    bool aeco:wall:flipped = false (
+        doc = "DRIVER. Reverse the direction in which ordered layers extend from the reference line."
+    )
+    double aeco:wall:height = 3 (
+        doc = "DRIVER (m) when topLevel is unset; resolved height when constrained. Conditional ownership is enforced by adapters, so this property has no global derived flag."
+    )
+    double aeco:wall:baseOffset = 0 (
+        doc = "DRIVER (m). Vertical offset from the corresponding level constraint."
+    )
+    double aeco:wall:topOffset = 0 (
+        doc = "DRIVER (m). Vertical offset from the corresponding level constraint."
+    )
+    rel aeco:wall:baseLevel (
+        doc = "DRIVER. Optional AecoLevel constraint; empty topLevel means unconnected height."
+    )
+    rel aeco:wall:topLevel (
+        doc = "DRIVER. Optional AecoLevel constraint; empty topLevel means unconnected height."
+    )
+    bool aeco:wall:isExternal = false (
+        doc = "DRIVER. Wall semantic flag; roomBounding indicates participation in space boundaries."
+    )
+    bool aeco:wall:loadBearing = false (
+        doc = "DRIVER. Wall semantic flag; roomBounding indicates participation in space boundaries."
+    )
+    bool aeco:wall:roomBounding = true (
+        doc = "DRIVER. Wall semantic flag; roomBounding indicates participation in space boundaries."
+    )
+    rel aeco:wall:joinAtStart (
+        doc = "DRIVER. Ordered joined wall targets at this axis location; author reciprocal links. Path joins are geometric constraints, not the port network."
+    )
+    rel aeco:wall:joinAtEnd (
+        doc = "DRIVER. Ordered joined wall targets at this axis location; author reciprocal links. Path joins are geometric constraints, not the port network."
+    )
+    rel aeco:wall:joinAlongPath (
+        doc = "DRIVER. Ordered joined wall targets at this axis location; author reciprocal links. Path joins are geometric constraints, not the port network."
+    )
+    bool aeco:wall:allowJoinAtStart = true (
+        doc = "DRIVER. Whether this end may join; an adapter removes existing joins when disallowed."
+    )
+    bool aeco:wall:allowJoinAtEnd = true (
+        doc = "DRIVER. Whether this end may join; an adapter removes existing joins when disallowed."
+    )
+    uniform token aeco:wall:joinTypeStart = "auto" (
+        doc = "DRIVER. End join construction intent."
+        allowedTokens = ["auto", "butt", "miter", "squareOff", "none"]
+    )
+    uniform token aeco:wall:joinTypeEnd = "auto" (
+        doc = "DRIVER. End join construction intent."
+        allowedTokens = ["auto", "butt", "miter", "squareOff", "none"]
+    )
+    double aeco:wall:thickness = 0 (
+        doc = "DERIVED (m). Resolved section or quantity; zero means unavailable. Net quantities account for openings."
+        aecoDerived = true
+    )
+    double aeco:wall:grossSideArea = 0 (
+        doc = "DERIVED (m2). Resolved section or quantity; zero means unavailable. Net quantities account for openings."
+        aecoDerived = true
+    )
+    double aeco:wall:netSideArea = 0 (
+        doc = "DERIVED (m2). Resolved section or quantity; zero means unavailable. Net quantities account for openings."
+        aecoDerived = true
+    )
+    double aeco:wall:grossVolume = 0 (
+        doc = "DERIVED (m3). Resolved section or quantity; zero means unavailable. Net quantities account for openings."
+        aecoDerived = true
+    )
+    double aeco:wall:netVolume = 0 (
+        doc = "DERIVED (m3). Resolved section or quantity; zero means unavailable. Net quantities account for openings."
+        aecoDerived = true
+    )
+}
+
+class "AecoOpeningAPI" (
+    inherits = </APISchemaBase>
+    doc = "Minimal seed of usdAecoOpening, temporarily owned by usdAecoWall. Semantic cut and filling references; no geometry contract."
+    customData = {
+        string className = "OpeningAPI"
+        token apiSchemaType = "singleApply"
+        token[] apiSchemaCanOnlyApplyTo = ["Imageable"]
+    }
+) {
+    rel aeco:opening:host (
+        doc = "DRIVER. The wall cut by this opening."
+    )
+    rel aeco:opening:filling (
+        doc = "DRIVER. Optional door or window filling this opening."
+    )
+    double aeco:opening:width = 0 (
+        doc = "DRIVER (m). Full opening width along local X, centered on the opening origin. Zero means unknown."
+    )
+    double aeco:opening:height = 0 (
+        doc = "DRIVER (m). Opening height above its origin. Zero means unknown."
+    )
+    double aeco:opening:sillHeight = 0 (
+        doc = "DRIVER (m). Sill above the wall base, reported for convenience; the opening transform locates the cut."
+    )
+}

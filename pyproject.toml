@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "usdaeco-wall"
+version = "0.2.4"
+requires-python = ">=3.11"
+dependencies = ["usdaeco-toolchain>=0.3.8,<0.4"]
+
+[project.scripts]
+aeco-wall = "usdaeco_wall.cli:main"
+
+[tool.setuptools]
+packages = ["usdaeco_wall", "usdAecoWallValidators"]
+package-dir = {usdaeco_wall = "tools/usdaeco_wall", usdAecoWallValidators = "usdAecoWallValidators"}
+
+[tool.setuptools.package-data]
+usdAecoWallValidators = ["plugInfo.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["testenv"]
+python_files = ["test*.py"]

@@ -1,0 +1,20 @@
+{
+  "name": "usdAecoWall",
+  "version": "0.2.4",
+  "kind": "usecase",
+  "tier": "kind",
+  "requires": {
+    "usdAeco": ">=0.9,<1.0",
+    "usdAecoAxis": ">=0.1,<0.2",
+    "usdAecoBuildUp": ">=0.1,<0.3"
+  },
+  "namespaces": [
+    "wall",
+    "opening"
+  ],
+  "classPrefixes": [
+    "AecoWall",
+    "AecoOpening"
+  ],
+  "license": "MIT"
+}

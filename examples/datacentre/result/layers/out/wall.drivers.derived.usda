@@ -1,0 +1,685 @@
+#usda 1.0
+(
+    customLayerData = {
+        string "aeco:wall:layer" = "derived"
+        string "aeco:wall:producer" = "aeco-wall 0.2.4"
+    }
+)
+
+over "demo_datacentre_01"
+{
+    over "demo_datacentre_01_Site"
+    {
+        over "demo_datacentre_01"
+        {
+            over "L00_Ground"
+            {
+                over "wall_l0_v_051"
+                {
+                    double aeco:wall:grossSideArea = 11.25
+                    double aeco:wall:grossVolume = 1.6875
+                    double aeco:wall:thickness = 0.15
+                }
+
+                over "wall_l0_v_063"
+                {
+                    double aeco:wall:grossSideArea = 36
+                    double aeco:wall:grossVolume = 7.2
+                    double aeco:wall:thickness = 0.2
+                }
+
+                over "wall_l0_h_033"
+                {
+                    double aeco:wall:grossSideArea = 180
+                    double aeco:wall:grossVolume = 36
+                    double aeco:wall:thickness = 0.2
+                }
+
+                over "wall_l0_h_039"
+                {
+                    double aeco:wall:grossSideArea = 28
+                    double aeco:wall:grossVolume = 8.4
+                    double aeco:wall:thickness = 0.3
+                }
+
+                over "wall_l0_v_069"
+                {
+                    double aeco:wall:grossSideArea = 108
+                    double aeco:wall:grossVolume = 21.6
+                    double aeco:wall:thickness = 0.2
+                }
+
+                over "wall_l0_h_022"
+                {
+                    double aeco:wall:grossSideArea = 72
+                    double aeco:wall:grossVolume = 14.4
+                    double aeco:wall:thickness = 0.2
+                }
+
+                over "wall_l0_v_048"
+                {
+                    double aeco:wall:grossSideArea = 54
+                    double aeco:wall:grossVolume = 10.8
+                    double aeco:wall:thickness = 0.2
+                }
+
+                over "wall_l0_v_043"
+                {
+                    double aeco:wall:grossSideArea = 126
+                    double aeco:wall:grossVolume = 37.8
+                    double aeco:wall:thickness = 0.3
+                }
+
+                over "wall_l0_v_058"
+                {
+                    double aeco:wall:grossSideArea = 22.5
+                    double aeco:wall:grossVolume = 4.5
+                    double aeco:wall:thickness = 0.2
+                }
+
+                over "wall_l0_v_053"
+                {
+                    double aeco:wall:grossSideArea = 36
+                    double aeco:wall:grossVolume = 7.2
+                    double aeco:wall:thickness = 0.2
+                }
+
+                over "wall_l0_v_047"
+                {
+                    double aeco:wall:grossSideArea = 36
+                    double aeco:wall:grossVolume = 7.2
+                    double aeco:wall:thickness = 0.2
+                }
+
+                over "wall_l0_v_064"
+                {
+                    double aeco:wall:grossSideArea = 54
+                    double aeco:wall:grossVolume = 10.8
+                    double aeco:wall:thickness = 0.2
+                }
+
+                over "wall_l0_h_010"
+                {
+                    double aeco:wall:grossSideArea = 21
+                    double aeco:wall:grossVolume = 4.2
+                    double aeco:wall:thickness = 0.2
+                }
+
+                over "wall_l0_h_008"
+                {
+                    double aeco:wall:grossSideArea = 11.25
+                    double aeco:wall:grossVolume = 1.6875
+                    double aeco:wall:thickness = 0.15
+                }
+
+                over "wall_l0_h_017"
+                {
+                    double aeco:wall:grossSideArea = 42
+                    double aeco:wall:grossVolume = 12.6
+                    double aeco:wall:thickness = 0.3
+                }
+
+                over "wall_l0_h_036"
+                {
+                    double aeco:wall:grossSideArea = 210
+                    double aeco:wall:grossVolume = 63
+                    double aeco:wall:thickness = 0.3
+                }
+
+                over "wall_l0_v_065"
+                {
+                    double aeco:wall:grossSideArea = 36
+                    double aeco:wall:grossVolume = 7.2
+                    double aeco:wall:thickness = 0.2
+                }
+
+                over "wall_l0_v_040"
+                {
+                    double aeco:wall:grossSideArea = 42
+                    double aeco:wall:grossVolume = 12.6
+                    double aeco:wall:thickness = 0.3
+                }
+
+                over "wall_l0_v_070"
+                {
+                    double aeco:wall:grossSideArea = 42
+                    double aeco:wall:grossVolume = 12.6
+                    double aeco:wall:thickness = 0.3
+                }
+
+                over "wall_l0_v_061"
+                {
+                    double aeco:wall:grossSideArea = 108
+                    double aeco:wall:grossVolume = 21.6
+                    double aeco:wall:thickness = 0.2
+                }
+
+                over "wall_l0_h_009"
+                {
+                    double aeco:wall:grossSideArea = 84
+                    double aeco:wall:grossVolume = 25.2
+                    double aeco:wall:thickness = 0.3
+                }
+
+                over "wall_l0_v_052"
+                {
+                    double aeco:wall:grossSideArea = 11.25
+                    double aeco:wall:grossVolume = 1.6875
+                    double aeco:wall:thickness = 0.15
+                }
+
+                over "wall_l0_h_032"
+                {
+                    double aeco:wall:grossSideArea = 24
+                    double aeco:wall:grossVolume = 3.5999999999999996
+                    double aeco:wall:thickness = 0.15
+                }
+
+                over "wall_l0_v_068"
+                {
+                    double aeco:wall:grossSideArea = 54
+                    double aeco:wall:grossVolume = 10.8
+                    double aeco:wall:thickness = 0.2
+                }
+
+                over "wall_l0_h_028"
+                {
+                    double aeco:wall:grossSideArea = 36
+                    double aeco:wall:grossVolume = 5.3999999999999995
+                    double aeco:wall:thickness = 0.15
+                }
+
+                over "wall_l0_v_042"
+                {
+                    double aeco:wall:grossSideArea = 21
+                    double aeco:wall:grossVolume = 6.3
+                    double aeco:wall:thickness = 0.3
+                }
+
+                over "wall_l0_h_011"
+                {
+                    double aeco:wall:grossSideArea = 21
+                    double aeco:wall:grossVolume = 4.2
+                    double aeco:wall:thickness = 0.2
+                }
+
+                over "wall_l0_v_067"
+                {
+                    double aeco:wall:grossSideArea = 36
+                    double aeco:wall:grossVolume = 7.2
+                    double aeco:wall:thickness = 0.2
+                }
+
+                over "wall_l0_h_005"
+                {
+                    double aeco:wall:grossSideArea = 15
+                    double aeco:wall:grossVolume = 2.25
+                    double aeco:wall:thickness = 0.15
+                }
+
+                over "wall_l0_v_055"
+                {
+                    double aeco:wall:grossSideArea = 22.5
+                    double aeco:wall:grossVolume = 3.375
+                    double aeco:wall:thickness = 0.15
+                }
+
+                over "wall_l0_h_002"
+                {
+                    double aeco:wall:grossSideArea = 16
+                    double aeco:wall:grossVolume = 4.8
+                    double aeco:wall:thickness = 0.3
+                }
+
+                over "wall_l0_v_049"
+                {
+                    double aeco:wall:grossSideArea = 11.25
+                    double aeco:wall:grossVolume = 1.6875
+                    double aeco:wall:thickness = 0.15
+                }
+
+                over "wall_l0_v_072"
+                {
+                    double aeco:wall:grossSideArea = 21
+                    double aeco:wall:grossVolume = 6.3
+                    double aeco:wall:thickness = 0.3
+                }
+
+                over "wall_l0_h_003"
+                {
+                    double aeco:wall:grossSideArea = 32
+                    double aeco:wall:grossVolume = 9.6
+                    double aeco:wall:thickness = 0.3
+                }
+
+                over "wall_l0_h_012"
+                {
+                    double aeco:wall:grossSideArea = 42
+                    double aeco:wall:grossVolume = 8.4
+                    double aeco:wall:thickness = 0.2
+                }
+
+                over "wall_l0_h_014"
+                {
+                    double aeco:wall:grossSideArea = 28
+                    double aeco:wall:grossVolume = 5.6000000000000005
+                    double aeco:wall:thickness = 0.2
+                }
+
+                over "wall_l0_h_007"
+                {
+                    double aeco:wall:grossSideArea = 11.25
+                    double aeco:wall:grossVolume = 1.6875
+                    double aeco:wall:thickness = 0.15
+                }
+
+                over "wall_l0_v_041"
+                {
+                    double aeco:wall:grossSideArea = 63
+                    double aeco:wall:grossVolume = 18.9
+                    double aeco:wall:thickness = 0.3
+                }
+
+                over "wall_l0_h_021"
+                {
+                    double aeco:wall:grossSideArea = 36
+                    double aeco:wall:grossVolume = 7.2
+                    double aeco:wall:thickness = 0.2
+                }
+
+                over "wall_l0_v_060"
+                {
+                    double aeco:wall:grossSideArea = 24
+                    double aeco:wall:grossVolume = 7.199999999999999
+                    double aeco:wall:thickness = 0.3
+                }
+
+                over "wall_l0_v_044"
+                {
+                    double aeco:wall:grossSideArea = 108
+                    double aeco:wall:grossVolume = 21.6
+                    double aeco:wall:thickness = 0.2
+                }
+
+                over "wall_l0_h_029"
+                {
+                    double aeco:wall:grossSideArea = 72
+                    double aeco:wall:grossVolume = 14.4
+                    double aeco:wall:thickness = 0.2
+                }
+
+                over "wall_l0_h_025"
+                {
+                    double aeco:wall:grossSideArea = 36
+                    double aeco:wall:grossVolume = 7.2
+                    double aeco:wall:thickness = 0.2
+                }
+
+                over "wall_l0_h_020"
+                {
+                    double aeco:wall:grossSideArea = 36
+                    double aeco:wall:grossVolume = 7.2
+                    double aeco:wall:thickness = 0.2
+                }
+
+                over "wall_l0_h_015"
+                {
+                    double aeco:wall:grossSideArea = 126
+                    double aeco:wall:grossVolume = 37.8
+                    double aeco:wall:thickness = 0.3
+                }
+
+                over "wall_l0_v_057"
+                {
+                    double aeco:wall:grossSideArea = 54
+                    double aeco:wall:grossVolume = 10.8
+                    double aeco:wall:thickness = 0.2
+                }
+
+                over "wall_l0_h_037"
+                {
+                    double aeco:wall:grossSideArea = 28
+                    double aeco:wall:grossVolume = 8.4
+                    double aeco:wall:thickness = 0.3
+                }
+
+                over "wall_l0_h_016"
+                {
+                    double aeco:wall:grossSideArea = 42
+                    double aeco:wall:grossVolume = 12.6
+                    double aeco:wall:thickness = 0.3
+                }
+
+                over "wall_l0_v_071"
+                {
+                    double aeco:wall:grossSideArea = 63
+                    double aeco:wall:grossVolume = 18.9
+                    double aeco:wall:thickness = 0.3
+                }
+
+                over "wall_l0_h_038"
+                {
+                    double aeco:wall:grossSideArea = 210
+                    double aeco:wall:grossVolume = 63
+                    double aeco:wall:thickness = 0.3
+                }
+
+                over "wall_l0_v_073"
+                {
+                    double aeco:wall:grossSideArea = 126
+                    double aeco:wall:grossVolume = 37.8
+                    double aeco:wall:thickness = 0.3
+                }
+
+                over "wall_l0_h_019"
+                {
+                    double aeco:wall:grossSideArea = 72
+                    double aeco:wall:grossVolume = 14.4
+                    double aeco:wall:thickness = 0.2
+                }
+
+                over "wall_l0_v_066"
+                {
+                    double aeco:wall:grossSideArea = 54
+                    double aeco:wall:grossVolume = 10.8
+                    double aeco:wall:thickness = 0.2
+                }
+
+                over "wall_l0_v_056"
+                {
+                    double aeco:wall:grossSideArea = 36
+                    double aeco:wall:grossVolume = 7.2
+                    double aeco:wall:thickness = 0.2
+                }
+
+                over "wall_l0_h_027"
+                {
+                    double aeco:wall:grossSideArea = 36
+                    double aeco:wall:grossVolume = 7.2
+                    double aeco:wall:thickness = 0.2
+                }
+
+                over "wall_l0_h_030"
+                {
+                    double aeco:wall:grossSideArea = 24
+                    double aeco:wall:grossVolume = 3.5999999999999996
+                    double aeco:wall:thickness = 0.15
+                }
+
+                over "wall_l0_h_013"
+                {
+                    double aeco:wall:grossSideArea = 14
+                    double aeco:wall:grossVolume = 2.8000000000000003
+                    double aeco:wall:thickness = 0.2
+                }
+
+                over "wall_l0_v_045"
+                {
+                    double aeco:wall:grossSideArea = 36
+                    double aeco:wall:grossVolume = 10.799999999999999
+                    double aeco:wall:thickness = 0.3
+                }
+
+                over "wall_l0_h_018"
+                {
+                    double aeco:wall:grossSideArea = 84
+                    double aeco:wall:grossVolume = 25.2
+                    double aeco:wall:thickness = 0.3
+                }
+
+                over "wall_l0_h_024"
+                {
+                    double aeco:wall:grossSideArea = 36
+                    double aeco:wall:grossVolume = 5.3999999999999995
+                    double aeco:wall:thickness = 0.15
+                }
+
+                over "wall_l0_h_006"
+                {
+                    double aeco:wall:grossSideArea = 15
+                    double aeco:wall:grossVolume = 3
+                    double aeco:wall:thickness = 0.2
+                }
+
+                over "wall_l0_v_050"
+                {
+                    double aeco:wall:grossSideArea = 22.5
+                    double aeco:wall:grossVolume = 3.375
+                    double aeco:wall:thickness = 0.15
+                }
+
+                over "wall_l0_h_001"
+                {
+                    double aeco:wall:grossSideArea = 24
+                    double aeco:wall:grossVolume = 7.199999999999999
+                    double aeco:wall:thickness = 0.3
+                }
+
+                over "wall_l0_v_062"
+                {
+                    double aeco:wall:grossSideArea = 108
+                    double aeco:wall:grossVolume = 21.6
+                    double aeco:wall:thickness = 0.2
+                }
+
+                over "wall_l0_v_054"
+                {
+                    double aeco:wall:grossSideArea = 54
+                    double aeco:wall:grossVolume = 10.8
+                    double aeco:wall:thickness = 0.2
+                }
+
+                over "wall_l0_v_046"
+                {
+                    double aeco:wall:grossSideArea = 12
+                    double aeco:wall:grossVolume = 3.5999999999999996
+                    double aeco:wall:thickness = 0.3
+                }
+
+                over "wall_l0_h_026"
+                {
+                    double aeco:wall:grossSideArea = 144
+                    double aeco:wall:grossVolume = 28.8
+                    double aeco:wall:thickness = 0.2
+                }
+
+                over "wall_l0_h_004"
+                {
+                    double aeco:wall:grossSideArea = 15
+                    double aeco:wall:grossVolume = 2.25
+                    double aeco:wall:thickness = 0.15
+                }
+
+                over "wall_l0_h_034"
+                {
+                    double aeco:wall:grossSideArea = 24
+                    double aeco:wall:grossVolume = 3.5999999999999996
+                    double aeco:wall:thickness = 0.15
+                }
+
+                over "wall_l0_v_059"
+                {
+                    double aeco:wall:grossSideArea = 24
+                    double aeco:wall:grossVolume = 7.199999999999999
+                    double aeco:wall:thickness = 0.3
+                }
+
+                over "wall_l0_h_031"
+                {
+                    double aeco:wall:grossSideArea = 180
+                    double aeco:wall:grossVolume = 36
+                    double aeco:wall:thickness = 0.2
+                }
+
+                over "wall_l0_h_023"
+                {
+                    double aeco:wall:grossSideArea = 72
+                    double aeco:wall:grossVolume = 14.4
+                    double aeco:wall:thickness = 0.2
+                }
+
+                over "wall_l0_h_035"
+                {
+                    double aeco:wall:grossSideArea = 28
+                    double aeco:wall:grossVolume = 8.4
+                    double aeco:wall:thickness = 0.3
+                }
+            }
+
+            over "L01_Office"
+            {
+                over "wall_l1_v_017"
+                {
+                    double aeco:wall:grossSideArea = 12
+                    double aeco:wall:grossVolume = 3.5999999999999996
+                    double aeco:wall:thickness = 0.3
+                }
+
+                over "wall_l1_h_001"
+                {
+                    double aeco:wall:grossSideArea = 30
+                    double aeco:wall:grossVolume = 9
+                    double aeco:wall:thickness = 0.3
+                }
+
+                over "wall_l1_v_014"
+                {
+                    double aeco:wall:grossSideArea = 27
+                    double aeco:wall:grossVolume = 4.05
+                    double aeco:wall:thickness = 0.15
+                }
+
+                over "wall_l1_h_008"
+                {
+                    double aeco:wall:grossSideArea = 12
+                    double aeco:wall:grossVolume = 1.7999999999999998
+                    double aeco:wall:thickness = 0.15
+                }
+
+                over "wall_l1_h_002"
+                {
+                    double aeco:wall:grossSideArea = 12
+                    double aeco:wall:grossVolume = 3.5999999999999996
+                    double aeco:wall:thickness = 0.3
+                }
+
+                over "wall_l1_h_010"
+                {
+                    double aeco:wall:grossSideArea = 45
+                    double aeco:wall:grossVolume = 13.5
+                    double aeco:wall:thickness = 0.3
+                }
+
+                over "wall_l1_h_007"
+                {
+                    double aeco:wall:grossSideArea = 12
+                    double aeco:wall:grossVolume = 1.7999999999999998
+                    double aeco:wall:thickness = 0.15
+                }
+
+                over "wall_l1_v_013"
+                {
+                    double aeco:wall:grossSideArea = 9
+                    double aeco:wall:grossVolume = 1.3499999999999999
+                    double aeco:wall:thickness = 0.15
+                }
+
+                over "wall_l1_v_019"
+                {
+                    double aeco:wall:grossSideArea = 9
+                    double aeco:wall:grossVolume = 2.6999999999999997
+                    double aeco:wall:thickness = 0.3
+                }
+
+                over "wall_l1_v_012"
+                {
+                    double aeco:wall:grossSideArea = 9
+                    double aeco:wall:grossVolume = 2.6999999999999997
+                    double aeco:wall:thickness = 0.3
+                }
+
+                over "wall_l1_h_006"
+                {
+                    double aeco:wall:grossSideArea = 21
+                    double aeco:wall:grossVolume = 3.15
+                    double aeco:wall:thickness = 0.15
+                }
+
+                over "wall_l1_h_004"
+                {
+                    double aeco:wall:grossSideArea = 12
+                    double aeco:wall:grossVolume = 1.7999999999999998
+                    double aeco:wall:thickness = 0.15
+                }
+
+                over "wall_l1_h_003"
+                {
+                    double aeco:wall:grossSideArea = 12
+                    double aeco:wall:grossVolume = 3.5999999999999996
+                    double aeco:wall:thickness = 0.3
+                }
+
+                over "wall_l1_v_018"
+                {
+                    double aeco:wall:grossSideArea = 15
+                    double aeco:wall:grossVolume = 4.5
+                    double aeco:wall:thickness = 0.3
+                }
+
+                over "wall_l1_v_015"
+                {
+                    double aeco:wall:grossSideArea = 12
+                    double aeco:wall:grossVolume = 1.7999999999999998
+                    double aeco:wall:thickness = 0.15
+                }
+
+                over "wall_l1_h_009"
+                {
+                    double aeco:wall:grossSideArea = 9
+                    double aeco:wall:grossVolume = 2.6999999999999997
+                    double aeco:wall:thickness = 0.3
+                }
+
+                over "wall_l1_v_016"
+                {
+                    double aeco:wall:grossSideArea = 15
+                    double aeco:wall:grossVolume = 2.25
+                    double aeco:wall:thickness = 0.15
+                }
+
+                over "wall_l1_v_011"
+                {
+                    double aeco:wall:grossSideArea = 27
+                    double aeco:wall:grossVolume = 8.1
+                    double aeco:wall:thickness = 0.3
+                }
+
+                over "wall_l1_h_005"
+                {
+                    double aeco:wall:grossSideArea = 9
+                    double aeco:wall:grossVolume = 1.3499999999999999
+                    double aeco:wall:thickness = 0.15
+                }
+            }
+        }
+    }
+
+    over "_TypeCatalog"
+    {
+        over "Internal_Wall_150"
+        {
+            double aeco:buildUp:totalThickness = 0.15
+        }
+
+        over "Fire_Wall_200"
+        {
+            double aeco:buildUp:totalThickness = 0.2
+        }
+
+        over "External_Wall_300"
+        {
+            double aeco:buildUp:totalThickness = 0.3
+        }
+    }
+}
+

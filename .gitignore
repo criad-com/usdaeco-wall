@@ -1,0 +1,14 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+out/
+!examples/datacentre/result/layers/out/
+!examples/datacentre/result/layers/out/**
+build/
+/result
+/result-*
+flake.lock
+*.egg-info/
+STEERING.md
+
+/examples/*/inputs/source

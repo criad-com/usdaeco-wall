@@ -1,0 +1,1659 @@
+#usda 1.0
+(
+    customLayerData = {
+        string "aeco:wall:layer" = "drivers"
+        string "aeco:wall:producer" = "aeco-wall 0.2.4"
+        string "aeco:wall:sectionEvidence" = "equivalent single layer from reported SI width; materials and priorities unknown"
+    }
+    defaultPrim = "demo_datacentre_01"
+    fallbackPrimTypes = {
+        token[] AecoFacility = ["Xform"]
+        token[] AecoFacilityPart = ["Xform"]
+        token[] AecoLevel = ["Xform"]
+        token[] AecoPort = ["Xform"]
+        token[] AecoSite = ["Xform"]
+        token[] AecoSpace = ["Xform"]
+        token[] AecoSystem = ["Scope"]
+        token[] AecoZone = ["Scope"]
+    }
+    metersPerUnit = 1
+    subLayers = [
+        @wall.drivers.derived.usda@,
+        @../../../inputs/source/dist/clash/dc.usda@
+    ]
+    upAxis = "Z"
+)
+
+over "demo_datacentre_01"
+{
+    over "demo_datacentre_01_Site"
+    {
+        over "demo_datacentre_01"
+        {
+            over "L00_Ground"
+            {
+                over "wall_l0_v_051" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 3.75
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 0
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_v_063" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 6
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_033" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 6
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_039" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 7
+                    bool aeco:wall:isExternal = 1
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_v_069" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 6
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_022" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 6
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_v_048" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 6
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_v_043" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 7
+                    bool aeco:wall:isExternal = 1
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_v_058" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 3.75
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_v_053" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 6
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_v_047" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 6
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_v_064" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 6
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_010" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 7
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_008" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 3.75
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 0
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_017" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 7
+                    bool aeco:wall:isExternal = 1
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_036" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 7
+                    bool aeco:wall:isExternal = 1
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_v_065" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 6
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_v_040" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 7
+                    bool aeco:wall:isExternal = 1
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_v_070" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 7
+                    bool aeco:wall:isExternal = 1
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_v_061" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 6
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_009" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 7
+                    bool aeco:wall:isExternal = 1
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_v_052" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 3.75
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 0
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_032" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 6
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 0
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_v_068" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 6
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_028" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 6
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 0
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_v_042" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 7
+                    bool aeco:wall:isExternal = 1
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_011" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 7
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_v_067" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 6
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_005" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 3.75
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 0
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_v_055" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 3.75
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 0
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_002" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 4
+                    bool aeco:wall:isExternal = 1
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_v_049" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 3.75
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 0
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_v_072" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 7
+                    bool aeco:wall:isExternal = 1
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_003" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 4
+                    bool aeco:wall:isExternal = 1
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_012" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 7
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_014" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 7
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_007" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 3.75
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 0
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_v_041" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 7
+                    bool aeco:wall:isExternal = 1
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_021" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 6
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_v_060" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 4
+                    bool aeco:wall:isExternal = 1
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_v_044" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 6
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_029" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 6
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_025" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 6
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_020" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 6
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_015" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 7
+                    bool aeco:wall:isExternal = 1
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_v_057" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 6
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_037" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 7
+                    bool aeco:wall:isExternal = 1
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_016" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 7
+                    bool aeco:wall:isExternal = 1
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_v_071" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 7
+                    bool aeco:wall:isExternal = 1
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_038" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 7
+                    bool aeco:wall:isExternal = 1
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_v_073" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 7
+                    bool aeco:wall:isExternal = 1
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_019" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 6
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_v_066" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 6
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_v_056" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 6
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_027" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 6
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_030" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 6
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 0
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_013" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 7
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_v_045" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 4
+                    bool aeco:wall:isExternal = 1
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_018" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 7
+                    bool aeco:wall:isExternal = 1
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_024" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 6
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 0
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_006" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 3.75
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_v_050" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 3.75
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 0
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_001" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 4
+                    bool aeco:wall:isExternal = 1
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_v_062" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 6
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_v_054" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 6
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_v_046" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 4
+                    bool aeco:wall:isExternal = 1
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_026" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 6
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_004" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 3.75
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 0
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_034" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 6
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 0
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_v_059" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 4
+                    bool aeco:wall:isExternal = 1
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_031" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 6
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_023" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 6
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l0_h_035" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 7
+                    bool aeco:wall:isExternal = 1
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+            }
+
+            over "L01_Office"
+            {
+                over "wall_l1_v_017" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 3
+                    bool aeco:wall:isExternal = 1
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l1_h_001" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 3
+                    bool aeco:wall:isExternal = 1
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l1_v_014" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 3
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 0
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l1_h_008" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 3
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 0
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l1_h_002" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 3
+                    bool aeco:wall:isExternal = 1
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l1_h_010" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 3
+                    bool aeco:wall:isExternal = 1
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l1_h_007" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 3
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 0
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l1_v_013" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 3
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 0
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l1_v_019" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 3
+                    bool aeco:wall:isExternal = 1
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l1_v_012" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 3
+                    bool aeco:wall:isExternal = 1
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l1_h_006" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 3
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 0
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l1_h_004" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 3
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 0
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l1_h_003" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 3
+                    bool aeco:wall:isExternal = 1
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l1_v_018" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 3
+                    bool aeco:wall:isExternal = 1
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l1_v_015" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 3
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 0
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l1_h_009" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 3
+                    bool aeco:wall:isExternal = 1
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l1_v_016" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 3
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 0
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l1_v_011" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 3
+                    bool aeco:wall:isExternal = 1
+                    bool aeco:wall:loadBearing = 1
+                    uniform token aeco:wall:locationLine = None
+                }
+
+                over "wall_l1_h_005" (
+                    prepend apiSchemas = ["AecoWallAPI"]
+                )
+                {
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = None
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = None
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = None
+                    bool aeco:wall:flipped = None
+                    double aeco:wall:height = 3
+                    bool aeco:wall:isExternal = 0
+                    bool aeco:wall:loadBearing = 0
+                    uniform token aeco:wall:locationLine = None
+                }
+            }
+        }
+    }
+
+    over "_TypeCatalog"
+    {
+        over "Internal_Wall_150" (
+            prepend apiSchemas = ["AecoBuildUpAPI"]
+            customData = {
+                dictionary aeco = {
+                    dictionary wall = {
+                        string sectionEvidence = "equivalent single layer from reported width"
+                    }
+                }
+            }
+        )
+        {
+            token[] aeco:buildUp:functions = ["other"]
+            string[] aeco:buildUp:materials = [""]
+            int[] aeco:buildUp:priorities = [0]
+            double[] aeco:buildUp:thicknesses = [0.15]
+        }
+
+        over "Fire_Wall_200" (
+            prepend apiSchemas = ["AecoBuildUpAPI"]
+            customData = {
+                dictionary aeco = {
+                    dictionary wall = {
+                        string sectionEvidence = "equivalent single layer from reported width"
+                    }
+                }
+            }
+        )
+        {
+            token[] aeco:buildUp:functions = ["other"]
+            string[] aeco:buildUp:materials = [""]
+            int[] aeco:buildUp:priorities = [0]
+            double[] aeco:buildUp:thicknesses = [0.2]
+        }
+
+        over "External_Wall_300" (
+            prepend apiSchemas = ["AecoBuildUpAPI"]
+            customData = {
+                dictionary aeco = {
+                    dictionary wall = {
+                        string sectionEvidence = "equivalent single layer from reported width"
+                    }
+                }
+            }
+        )
+        {
+            token[] aeco:buildUp:functions = ["other"]
+            string[] aeco:buildUp:materials = [""]
+            int[] aeco:buildUp:priorities = [0]
+            double[] aeco:buildUp:thicknesses = [0.3]
+        }
+    }
+}
+

@@ -1,0 +1,514 @@
+#usda 1.0
+(
+    customLayerData = {
+        string "aeco:axis:layer" = "derived"
+        string "aeco:axis:producer" = "aeco-axis 0.1.2"
+    }
+)
+
+def "demo_datacentre_01"
+{
+    def "demo_datacentre_01_Site"
+    {
+        def "demo_datacentre_01"
+        {
+            def "L01_Office"
+            {
+                def "wall_l1_v_017"
+                {
+                    double aeco:axis:length = 4
+
+                    def BasisCurves "Axis" (
+                        prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+                    )
+                    {
+                        uniform token aeco:derived:approx = "exact"
+                        uniform token aeco:derived:role = "axis"
+                        string aeco:derived:source = "17fabf2a-db55-5b3d-acbe-4cc963ed34b0"
+                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        double aeco:derived:tolerance = 1e-9
+                        int[] curveVertexCounts = [2]
+                        float3[] extent = [(-0.03, -0.03, -0.03), (4.03, 0.03, 0.03)]
+                        point3f[] points = [(0, 0, 0), (4, 0, 0)]
+                        color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+                        uniform token purpose = "guide"
+                        uniform token type = "linear"
+                        float[] widths = [0.06] (
+                            interpolation = "constant"
+                        )
+                        uniform token wrap = "nonperiodic"
+                    }
+                }
+
+                def "wall_l1_h_001"
+                {
+                    double aeco:axis:length = 10
+
+                    def BasisCurves "Axis" (
+                        prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+                    )
+                    {
+                        uniform token aeco:derived:approx = "exact"
+                        uniform token aeco:derived:role = "axis"
+                        string aeco:derived:source = "1aba178f-cac6-5655-9fb3-22c675cc2dd7"
+                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        double aeco:derived:tolerance = 1e-9
+                        int[] curveVertexCounts = [2]
+                        float3[] extent = [(-0.03, -0.03, -0.03), (10.03, 0.03, 0.03)]
+                        point3f[] points = [(0, 0, 0), (10, 0, 0)]
+                        color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+                        uniform token purpose = "guide"
+                        uniform token type = "linear"
+                        float[] widths = [0.06] (
+                            interpolation = "constant"
+                        )
+                        uniform token wrap = "nonperiodic"
+                    }
+                }
+
+                def "wall_l1_v_014"
+                {
+                    double aeco:axis:length = 9
+
+                    def BasisCurves "Axis" (
+                        prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+                    )
+                    {
+                        uniform token aeco:derived:approx = "exact"
+                        uniform token aeco:derived:role = "axis"
+                        string aeco:derived:source = "2a39d1c5-51fc-50c0-b5ab-579342c7c597"
+                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        double aeco:derived:tolerance = 1e-9
+                        int[] curveVertexCounts = [2]
+                        float3[] extent = [(-0.03, -0.03, -0.03), (9.03, 0.03, 0.03)]
+                        point3f[] points = [(0, 0, 0), (9, 0, 0)]
+                        color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+                        uniform token purpose = "guide"
+                        uniform token type = "linear"
+                        float[] widths = [0.06] (
+                            interpolation = "constant"
+                        )
+                        uniform token wrap = "nonperiodic"
+                    }
+                }
+
+                def "wall_l1_h_008"
+                {
+                    double aeco:axis:length = 4
+
+                    def BasisCurves "Axis" (
+                        prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+                    )
+                    {
+                        uniform token aeco:derived:approx = "exact"
+                        uniform token aeco:derived:role = "axis"
+                        string aeco:derived:source = "43540151-c12f-56c9-b032-2b64fd66c8e4"
+                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        double aeco:derived:tolerance = 1e-9
+                        int[] curveVertexCounts = [2]
+                        float3[] extent = [(-0.03, -0.03, -0.03), (4.03, 0.03, 0.03)]
+                        point3f[] points = [(0, 0, 0), (4, 0, 0)]
+                        color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+                        uniform token purpose = "guide"
+                        uniform token type = "linear"
+                        float[] widths = [0.06] (
+                            interpolation = "constant"
+                        )
+                        uniform token wrap = "nonperiodic"
+                    }
+                }
+
+                def "wall_l1_h_002"
+                {
+                    double aeco:axis:length = 4
+
+                    def BasisCurves "Axis" (
+                        prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+                    )
+                    {
+                        uniform token aeco:derived:approx = "exact"
+                        uniform token aeco:derived:role = "axis"
+                        string aeco:derived:source = "4556958a-1b5c-5eeb-89a9-7cf49af08c5a"
+                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        double aeco:derived:tolerance = 1e-9
+                        int[] curveVertexCounts = [2]
+                        float3[] extent = [(-0.03, -0.03, -0.03), (4.03, 0.03, 0.03)]
+                        point3f[] points = [(0, 0, 0), (4, 0, 0)]
+                        color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+                        uniform token purpose = "guide"
+                        uniform token type = "linear"
+                        float[] widths = [0.06] (
+                            interpolation = "constant"
+                        )
+                        uniform token wrap = "nonperiodic"
+                    }
+                }
+
+                def "wall_l1_h_010"
+                {
+                    double aeco:axis:length = 15
+
+                    def BasisCurves "Axis" (
+                        prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+                    )
+                    {
+                        uniform token aeco:derived:approx = "exact"
+                        uniform token aeco:derived:role = "axis"
+                        string aeco:derived:source = "46bb8ddc-66ac-5ee6-ba2f-72feb5bf8844"
+                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        double aeco:derived:tolerance = 1e-9
+                        int[] curveVertexCounts = [2]
+                        float3[] extent = [(-0.03, -0.03, -0.03), (15.03, 0.03, 0.03)]
+                        point3f[] points = [(0, 0, 0), (15, 0, 0)]
+                        color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+                        uniform token purpose = "guide"
+                        uniform token type = "linear"
+                        float[] widths = [0.06] (
+                            interpolation = "constant"
+                        )
+                        uniform token wrap = "nonperiodic"
+                    }
+                }
+
+                def "wall_l1_h_007"
+                {
+                    double aeco:axis:length = 4
+
+                    def BasisCurves "Axis" (
+                        prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+                    )
+                    {
+                        uniform token aeco:derived:approx = "exact"
+                        uniform token aeco:derived:role = "axis"
+                        string aeco:derived:source = "51468e7f-5fca-54c5-9547-9c7f5cb51055"
+                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        double aeco:derived:tolerance = 1e-9
+                        int[] curveVertexCounts = [2]
+                        float3[] extent = [(-0.03, -0.03, -0.03), (4.03, 0.03, 0.03)]
+                        point3f[] points = [(0, 0, 0), (4, 0, 0)]
+                        color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+                        uniform token purpose = "guide"
+                        uniform token type = "linear"
+                        float[] widths = [0.06] (
+                            interpolation = "constant"
+                        )
+                        uniform token wrap = "nonperiodic"
+                    }
+                }
+
+                def "wall_l1_v_013"
+                {
+                    double aeco:axis:length = 3
+
+                    def BasisCurves "Axis" (
+                        prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+                    )
+                    {
+                        uniform token aeco:derived:approx = "exact"
+                        uniform token aeco:derived:role = "axis"
+                        string aeco:derived:source = "54f3cd30-3297-5932-8281-adfb776aab7d"
+                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        double aeco:derived:tolerance = 1e-9
+                        int[] curveVertexCounts = [2]
+                        float3[] extent = [(-0.03, -0.03, -0.03), (3.03, 0.03, 0.03)]
+                        point3f[] points = [(0, 0, 0), (3, 0, 0)]
+                        color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+                        uniform token purpose = "guide"
+                        uniform token type = "linear"
+                        float[] widths = [0.06] (
+                            interpolation = "constant"
+                        )
+                        uniform token wrap = "nonperiodic"
+                    }
+                }
+
+                def "wall_l1_v_019"
+                {
+                    double aeco:axis:length = 3
+
+                    def BasisCurves "Axis" (
+                        prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+                    )
+                    {
+                        uniform token aeco:derived:approx = "exact"
+                        uniform token aeco:derived:role = "axis"
+                        string aeco:derived:source = "6401b4a1-b2f1-5eb6-9378-29e500fe9c37"
+                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        double aeco:derived:tolerance = 1e-9
+                        int[] curveVertexCounts = [2]
+                        float3[] extent = [(-0.03, -0.03, -0.03), (3.03, 0.03, 0.03)]
+                        point3f[] points = [(0, 0, 0), (3, 0, 0)]
+                        color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+                        uniform token purpose = "guide"
+                        uniform token type = "linear"
+                        float[] widths = [0.06] (
+                            interpolation = "constant"
+                        )
+                        uniform token wrap = "nonperiodic"
+                    }
+                }
+
+                def "wall_l1_v_012"
+                {
+                    double aeco:axis:length = 3
+
+                    def BasisCurves "Axis" (
+                        prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+                    )
+                    {
+                        uniform token aeco:derived:approx = "exact"
+                        uniform token aeco:derived:role = "axis"
+                        string aeco:derived:source = "64c0b776-f5b1-556b-8a27-116d0f4e1b6f"
+                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        double aeco:derived:tolerance = 1e-9
+                        int[] curveVertexCounts = [2]
+                        float3[] extent = [(-0.03, -0.03, -0.03), (3.03, 0.03, 0.03)]
+                        point3f[] points = [(0, 0, 0), (3, 0, 0)]
+                        color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+                        uniform token purpose = "guide"
+                        uniform token type = "linear"
+                        float[] widths = [0.06] (
+                            interpolation = "constant"
+                        )
+                        uniform token wrap = "nonperiodic"
+                    }
+                }
+
+                def "wall_l1_h_006"
+                {
+                    double aeco:axis:length = 7
+
+                    def BasisCurves "Axis" (
+                        prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+                    )
+                    {
+                        uniform token aeco:derived:approx = "exact"
+                        uniform token aeco:derived:role = "axis"
+                        string aeco:derived:source = "93888444-e546-5ddb-a4ba-166a6073c262"
+                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        double aeco:derived:tolerance = 1e-9
+                        int[] curveVertexCounts = [2]
+                        float3[] extent = [(-0.03, -0.03, -0.03), (7.03, 0.03, 0.03)]
+                        point3f[] points = [(0, 0, 0), (7, 0, 0)]
+                        color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+                        uniform token purpose = "guide"
+                        uniform token type = "linear"
+                        float[] widths = [0.06] (
+                            interpolation = "constant"
+                        )
+                        uniform token wrap = "nonperiodic"
+                    }
+                }
+
+                def "wall_l1_h_004"
+                {
+                    double aeco:axis:length = 4
+
+                    def BasisCurves "Axis" (
+                        prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+                    )
+                    {
+                        uniform token aeco:derived:approx = "exact"
+                        uniform token aeco:derived:role = "axis"
+                        string aeco:derived:source = "9765b9c4-40bb-5ff7-a2a5-cdebad75b0bc"
+                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        double aeco:derived:tolerance = 1e-9
+                        int[] curveVertexCounts = [2]
+                        float3[] extent = [(-0.03, -0.03, -0.03), (4.03, 0.03, 0.03)]
+                        point3f[] points = [(0, 0, 0), (4, 0, 0)]
+                        color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+                        uniform token purpose = "guide"
+                        uniform token type = "linear"
+                        float[] widths = [0.06] (
+                            interpolation = "constant"
+                        )
+                        uniform token wrap = "nonperiodic"
+                    }
+                }
+
+                def "wall_l1_h_003"
+                {
+                    double aeco:axis:length = 4
+
+                    def BasisCurves "Axis" (
+                        prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+                    )
+                    {
+                        uniform token aeco:derived:approx = "exact"
+                        uniform token aeco:derived:role = "axis"
+                        string aeco:derived:source = "aeedc717-acaa-5458-8d1e-acd1bcfa095d"
+                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        double aeco:derived:tolerance = 1e-9
+                        int[] curveVertexCounts = [2]
+                        float3[] extent = [(-0.03, -0.03, -0.03), (4.03, 0.03, 0.03)]
+                        point3f[] points = [(0, 0, 0), (4, 0, 0)]
+                        color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+                        uniform token purpose = "guide"
+                        uniform token type = "linear"
+                        float[] widths = [0.06] (
+                            interpolation = "constant"
+                        )
+                        uniform token wrap = "nonperiodic"
+                    }
+                }
+
+                def "wall_l1_v_018"
+                {
+                    double aeco:axis:length = 5
+
+                    def BasisCurves "Axis" (
+                        prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+                    )
+                    {
+                        uniform token aeco:derived:approx = "exact"
+                        uniform token aeco:derived:role = "axis"
+                        string aeco:derived:source = "b8ad6534-0347-5bac-9654-5ba0bb28183a"
+                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        double aeco:derived:tolerance = 1e-9
+                        int[] curveVertexCounts = [2]
+                        float3[] extent = [(-0.03, -0.03, -0.03), (5.03, 0.03, 0.03)]
+                        point3f[] points = [(0, 0, 0), (5, 0, 0)]
+                        color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+                        uniform token purpose = "guide"
+                        uniform token type = "linear"
+                        float[] widths = [0.06] (
+                            interpolation = "constant"
+                        )
+                        uniform token wrap = "nonperiodic"
+                    }
+                }
+
+                def "wall_l1_v_015"
+                {
+                    double aeco:axis:length = 4
+
+                    def BasisCurves "Axis" (
+                        prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+                    )
+                    {
+                        uniform token aeco:derived:approx = "exact"
+                        uniform token aeco:derived:role = "axis"
+                        string aeco:derived:source = "c46e4871-96dd-54c4-af2b-1a161d7f1f55"
+                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        double aeco:derived:tolerance = 1e-9
+                        int[] curveVertexCounts = [2]
+                        float3[] extent = [(-0.03, -0.03, -0.03), (4.03, 0.03, 0.03)]
+                        point3f[] points = [(0, 0, 0), (4, 0, 0)]
+                        color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+                        uniform token purpose = "guide"
+                        uniform token type = "linear"
+                        float[] widths = [0.06] (
+                            interpolation = "constant"
+                        )
+                        uniform token wrap = "nonperiodic"
+                    }
+                }
+
+                def "wall_l1_h_009"
+                {
+                    double aeco:axis:length = 3
+
+                    def BasisCurves "Axis" (
+                        prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+                    )
+                    {
+                        uniform token aeco:derived:approx = "exact"
+                        uniform token aeco:derived:role = "axis"
+                        string aeco:derived:source = "cc8f6368-1f30-53e5-a842-8fd3461d0ac6"
+                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        double aeco:derived:tolerance = 1e-9
+                        int[] curveVertexCounts = [2]
+                        float3[] extent = [(-0.03, -0.03, -0.03), (3.03, 0.03, 0.03)]
+                        point3f[] points = [(0, 0, 0), (3, 0, 0)]
+                        color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+                        uniform token purpose = "guide"
+                        uniform token type = "linear"
+                        float[] widths = [0.06] (
+                            interpolation = "constant"
+                        )
+                        uniform token wrap = "nonperiodic"
+                    }
+                }
+
+                def "wall_l1_v_016"
+                {
+                    double aeco:axis:length = 5
+
+                    def BasisCurves "Axis" (
+                        prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+                    )
+                    {
+                        uniform token aeco:derived:approx = "exact"
+                        uniform token aeco:derived:role = "axis"
+                        string aeco:derived:source = "d008ead2-8996-54f8-9ced-7345cc4a0a8d"
+                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        double aeco:derived:tolerance = 1e-9
+                        int[] curveVertexCounts = [2]
+                        float3[] extent = [(-0.03, -0.03, -0.03), (5.03, 0.03, 0.03)]
+                        point3f[] points = [(0, 0, 0), (5, 0, 0)]
+                        color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+                        uniform token purpose = "guide"
+                        uniform token type = "linear"
+                        float[] widths = [0.06] (
+                            interpolation = "constant"
+                        )
+                        uniform token wrap = "nonperiodic"
+                    }
+                }
+
+                def "wall_l1_v_011"
+                {
+                    double aeco:axis:length = 9
+
+                    def BasisCurves "Axis" (
+                        prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+                    )
+                    {
+                        uniform token aeco:derived:approx = "exact"
+                        uniform token aeco:derived:role = "axis"
+                        string aeco:derived:source = "dd5cf3a2-629b-502e-bc90-de3eee629131"
+                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        double aeco:derived:tolerance = 1e-9
+                        int[] curveVertexCounts = [2]
+                        float3[] extent = [(-0.03, -0.03, -0.03), (9.03, 0.03, 0.03)]
+                        point3f[] points = [(0, 0, 0), (9, 0, 0)]
+                        color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+                        uniform token purpose = "guide"
+                        uniform token type = "linear"
+                        float[] widths = [0.06] (
+                            interpolation = "constant"
+                        )
+                        uniform token wrap = "nonperiodic"
+                    }
+                }
+
+                def "wall_l1_h_005"
+                {
+                    double aeco:axis:length = 3
+
+                    def BasisCurves "Axis" (
+                        prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+                    )
+                    {
+                        uniform token aeco:derived:approx = "exact"
+                        uniform token aeco:derived:role = "axis"
+                        string aeco:derived:source = "e045c7cd-b953-5b4a-936b-b64d2bda214d"
+                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        double aeco:derived:tolerance = 1e-9
+                        int[] curveVertexCounts = [2]
+                        float3[] extent = [(-0.03, -0.03, -0.03), (3.03, 0.03, 0.03)]
+                        point3f[] points = [(0, 0, 0), (3, 0, 0)]
+                        color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+                        uniform token purpose = "guide"
+                        uniform token type = "linear"
+                        float[] widths = [0.06] (
+                            interpolation = "constant"
+                        )
+                        uniform token wrap = "nonperiodic"
+                    }
+                }
+            }
+        }
+    }
+}
+

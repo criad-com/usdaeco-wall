@@ -1,0 +1,14 @@
+#usda 1.0
+(
+    subLayers = [@../schema.usda@]
+)
+over "AecoWallAPI" (
+    customData = {
+        string userDocBrief = "Wall drivers and derived quantities beside the shared axis and inherited build-up."
+    }
+) {}
+over "AecoOpeningAPI" (
+    customData = {
+        string userDocBrief = "A semantic cut with host, filling and dimensions; seed of a future opening library."
+    }
+) {}

@@ -1,0 +1,11 @@
+#usda 1.0
+# The hook writes the transform from the actual corner bounds to review.usda.
+def Scope "Renders"
+{
+    def Camera "partition_corner"
+    {
+        float focalLength = 45
+        float horizontalAperture = 24
+        float verticalAperture = 15
+    }
+}

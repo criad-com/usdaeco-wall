@@ -1,0 +1,4 @@
+#!/usr/bin/env python3
+from usdaeco_wall.cli import main
+
+raise SystemExit(main())

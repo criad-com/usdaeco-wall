@@ -1,0 +1,64 @@
+{
+  "repos": {
+    "toolchain": {
+      "repo": "usdaeco-toolchain",
+      "library": null,
+      "ref": "v0.3.8"
+    },
+    "core": {
+      "repo": "usdaeco-core",
+      "library": "usdAeco",
+      "ref": "v0.9.2"
+    },
+    "axis": {
+      "repo": "usdaeco-axis",
+      "library": "usdAecoAxis",
+      "ref": "v0.1.2"
+    },
+    "buildup": {
+      "repo": "usdaeco-buildup",
+      "library": "usdAecoBuildUp",
+      "ref": "v0.2.1"
+    },
+    "ifc": {
+      "repo": "usdaeco-ifc",
+      "library": null,
+      "ref": "v0.2.0"
+    },
+    "datacentre": {
+      "repo": "usdaeco-datacentre",
+      "library": null,
+      "ref": "v0.4.5"
+    }
+  },
+  "fixtures": {
+    "wall-schema": {
+      "repo": "usdaeco-wall",
+      "library": "usdAecoWall",
+      "ref": "v0.1.2",
+      "path": "testenv/baseline/manifest.json",
+      "reason": "Historical schema contract preserved for compatibility checks."
+    },
+    "requirement-core": {
+      "repo": "usdaeco-core",
+      "library": "usdAeco",
+      "ref": "v0.9.1",
+      "path": "check.py",
+      "reason": "Synthetic requirement-rejection metadata; never loaded as a runtime dependency."
+    },
+    "requirement-axis": {
+      "repo": "usdaeco-axis",
+      "library": "usdAecoAxis",
+      "ref": "v0.1.0",
+      "path": "check.py",
+      "reason": "Synthetic requirement-rejection metadata; never loaded as a runtime dependency."
+    },
+    "requirement-buildup": {
+      "repo": "usdaeco-buildup",
+      "library": "usdAecoBuildUp",
+      "ref": "v0.0.9",
+      "path": "check.py",
+      "reason": "Invented unsupported version for requirement-rejection checks; no checkout or release required."
+    }
+  }
+}
