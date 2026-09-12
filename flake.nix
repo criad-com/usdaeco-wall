@@ -1,22 +1,25 @@
 {
   description = "usdAecoWall: Route K wall drivers and published-body example";
   inputs = {
-    toolchain.url = "github:criad-com/usdaeco-toolchain?ref=v0.3.8";
+    toolchain.url = "github:criad-com/usdaeco-toolchain?ref=v0.3.10";
     nixpkgs.follows = "toolchain/nixpkgs";
-    core.url = "github:criad-com/usdaeco-core?ref=v0.9.2";
+    core.url = "github:criad-com/usdaeco-core?ref=v0.9.5";
     core.inputs.toolchain.follows = "toolchain";
     core.inputs.nixpkgs.follows = "nixpkgs";
-    axis.url = "github:criad-com/usdaeco-axis?ref=v0.1.2";
+    core.inputs.datacentre.follows = "datacentre";
+    axis.url = "github:criad-com/usdaeco-axis?ref=v0.1.5";
     axis.inputs.toolchain.follows = "toolchain";
     axis.inputs.core.follows = "core";
     axis.inputs.nixpkgs.follows = "nixpkgs";
-    buildup.url = "github:criad-com/usdaeco-buildup?ref=v0.2.1";
+    axis.inputs.datacentre.follows = "datacentre";
+    buildup.url = "github:criad-com/usdaeco-buildup?ref=v0.2.5";
     buildup.inputs.toolchain.follows = "toolchain";
     buildup.inputs.core.follows = "core";
     buildup.inputs.nixpkgs.follows = "nixpkgs";
-    ifc.url = "github:criad-com/usdaeco-ifc?ref=v0.2.0";
+    buildup.inputs.datacentre.follows = "datacentre";
+    ifc.url = "github:criad-com/usdaeco-ifc?ref=v0.2.2";
     ifc.flake = false;
-    datacentre.url = "github:criad-com/usdaeco-datacentre?ref=v0.4.5";
+    datacentre.url = "github:criad-com/usdaeco-datacentre?ref=v0.4.8";
     datacentre.flake = false;
   };
   outputs = { self, nixpkgs, toolchain, core, axis, buildup, ifc, datacentre }:

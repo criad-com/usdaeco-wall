@@ -1,7 +1,7 @@
 # Route K partition corner
 
 Inputs: the published `dist/clash/dc.usda` and `dc.manifest.json` from
-`usdaeco-datacentre` v0.4.5, plus [the camera](inputs/cameras.usda).
+`usdaeco-datacentre` v0.4.8, plus [the camera](inputs/cameras.usda).
 `AECO_DATACENTRE_ROOT` supplies the pinned source. Follow the
 [pinned environment setup](../../README.md#build-and-check), which extracts
 the exact tags without changing sibling checkouts.
@@ -44,7 +44,7 @@ it never changes points, faces or element transforms.
 
 The camera frames the composed bounds of two partitions and the hard-case
 pipe. Final rendering uses Embree with `--purposes guide,proxy,render`.
-Toolchain v0.3.5's shared harness renders default purposes first; the runner
+Toolchain v0.3.10's shared harness renders default purposes first; the runner
 then makes the explicit guide render and refreshes the final image records.
 `--publish` updates `result/`, the committed image and [manifest](manifest.json),
 including the userDoc copy; it never changes expected findings. Ordinary

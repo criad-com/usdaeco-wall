@@ -3,7 +3,7 @@ import os
 from pathlib import Path
 import sys
 
-__version__ = "0.2.4"
+__version__ = "0.2.5"
 ROOT = Path(__file__).resolve().parents[2]
 APIS = ("AecoWallAPI", "AecoOpeningAPI")
 JOIN_NAMES = ("joinAtStart", "joinAtEnd", "joinAlongPath")

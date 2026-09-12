@@ -1,0 +1,735 @@
+{
+  "baseline": "v0.2.4",
+  "release": "v0.2.5",
+  "pins": {
+    "axis": {
+      "library": "usdAecoAxis",
+      "ref": "v0.1.5",
+      "repo": "usdaeco-axis",
+      "revision": "ecff1d98bcc45c22fcceefd453374671900793ae"
+    },
+    "buildup": {
+      "library": "usdAecoBuildUp",
+      "ref": "v0.2.5",
+      "repo": "usdaeco-buildup",
+      "revision": "99ac95080bf4d1403d410b356c4645c3f251aa40"
+    },
+    "core": {
+      "library": "usdAeco",
+      "ref": "v0.9.5",
+      "repo": "usdaeco-core",
+      "revision": "683adc3280254bc71b396a9c64a359cc708788f4"
+    },
+    "datacentre": {
+      "library": null,
+      "ref": "v0.4.8",
+      "repo": "usdaeco-datacentre",
+      "revision": "9e22b14c4909e50806805e735f93b1b425ac48cb"
+    },
+    "ifc": {
+      "library": null,
+      "ref": "v0.2.2",
+      "repo": "usdaeco-ifc",
+      "revision": "8eb72e89af15e8642d914948384fe73038cc7817"
+    },
+    "toolchain": {
+      "library": null,
+      "ref": "v0.3.10",
+      "repo": "usdaeco-toolchain",
+      "revision": "59d3da5ff5114089b54efaaae38efdd7fe1b8e73"
+    }
+  },
+  "source_byte_identical": true,
+  "findings_byte_identical": true,
+  "layers": [
+    {
+      "path": "examples/datacentre/result/layers/inputs/cameras.usda",
+      "byte_identical": true,
+      "identical_except_producer_versions": true,
+      "before_sha256": "f1212705489219b64cd06fb26e6bd82ec1f608629024baf7406a5617003c6567",
+      "after_sha256": "f1212705489219b64cd06fb26e6bd82ec1f608629024baf7406a5617003c6567"
+    },
+    {
+      "path": "examples/datacentre/result/layers/out/axis.derived.usda",
+      "byte_identical": false,
+      "identical_except_producer_versions": true,
+      "before_sha256": "29a9c0139959217062bb421752bd8c253313485bf04f32403058c80f2c83b0e5",
+      "after_sha256": "dd8d528078fadb96daa90de82ab7dc71a442f3745d25dfb4580b73f3407ad52a"
+    },
+    {
+      "path": "examples/datacentre/result/layers/out/review.usda",
+      "byte_identical": true,
+      "identical_except_producer_versions": true,
+      "before_sha256": "9110e860cc90e0c331587e4b74d7554afaa6362d615d8d0cd0c52c4fa23aa8f6",
+      "after_sha256": "9110e860cc90e0c331587e4b74d7554afaa6362d615d8d0cd0c52c4fa23aa8f6"
+    },
+    {
+      "path": "examples/datacentre/result/layers/out/wall.drivers.derived.usda",
+      "byte_identical": false,
+      "identical_except_producer_versions": true,
+      "before_sha256": "ceaf315ddd598080c1bba510fd53f4cdd8cfb9d43b53583c8c5f8b7d7847aa2f",
+      "after_sha256": "c92be157b6ca9c7ec0d97aa0e53eabf25de706843471571e5d1f1215e7add79b"
+    },
+    {
+      "path": "examples/datacentre/result/layers/out/wall.drivers.usda",
+      "byte_identical": false,
+      "identical_except_producer_versions": true,
+      "before_sha256": "982076dffd0418b9c28b83e851cb289a3f722ec22c1b6ee8c57650b92c98f924",
+      "after_sha256": "8dfd7e405bcfffa07286b46b32af422ef66fe22d1f0b036e7bd4338d691db7f0"
+    }
+  ],
+  "renders": [
+    {
+      "path": "examples/datacentre/renders/partition_corner.png",
+      "before_sha256": "40a38d20aaeb70d138a2bf83b75b92869ac9b3c5e4332a1b03eed574adf7861b",
+      "fresh_sha256": "d1d230e323877afe096706e49ec54fd56a488894bed452c0b854e07f68be510e",
+      "fresh_bytes": 79950,
+      "dimensions": [
+        1280,
+        800
+      ],
+      "mean_absolute_channel_difference": 0.037692057291666664,
+      "maximum_channel_difference": 90,
+      "changed_pixels": 5657,
+      "committed_bytes_retained": true
+    },
+    {
+      "path": "examples/datacentre/result/vanilla.png",
+      "before_sha256": "bb93644df935b49463c3c2e0c748be044cc68890dccaa6e8e3dbd4361eb171d9",
+      "fresh_sha256": "2ff09f0eea65b1f3004cfe4b8f003f60dabf854fdfc3e2a077af55ce6e7379ff",
+      "fresh_bytes": 80383,
+      "dimensions": [
+        1280,
+        800
+      ],
+      "mean_absolute_channel_difference": 0.0372001953125,
+      "maximum_channel_difference": 80,
+      "changed_pixels": 5614,
+      "committed_bytes_retained": true
+    },
+    {
+      "path": "usdAecoWall/userDoc/usdAecoWallExample.png",
+      "before_sha256": "40a38d20aaeb70d138a2bf83b75b92869ac9b3c5e4332a1b03eed574adf7861b",
+      "fresh_sha256": "d1d230e323877afe096706e49ec54fd56a488894bed452c0b854e07f68be510e",
+      "fresh_bytes": 79950,
+      "dimensions": [
+        1280,
+        800
+      ],
+      "mean_absolute_channel_difference": 0.037692057291666664,
+      "maximum_channel_difference": 90,
+      "changed_pixels": 5657,
+      "committed_bytes_retained": true
+    }
+  ],
+  "crate": {
+    "bytes": 1685119,
+    "byte_identical": false,
+    "before_sha256": "de391ec9468a6eb0df079651b5f8653fa37bdae9c0f44bf38ed451e1a08b5847",
+    "after_sha256": "eb3e1daae2a6906d267ce544a47cbc024c7f7df779d4d674f1ba325dfca95f90",
+    "identical_except_axis_stamp": true,
+    "changed_lines": 38
+  },
+  "geometry": {
+    "meshes_unchanged": 3015,
+    "curves_unchanged": 19,
+    "world_transforms_unchanged": 12299,
+    "prims": 12375
+  },
+  "result_bytes": 2549113,
+  "schema_source_byte_identical": true,
+  "gate": {
+    "checks": [
+      {
+        "name": "core validators loaded through UsdValidation",
+        "ok": true,
+        "detail": "8/8 loaded"
+      },
+      {
+        "name": "profile example conformance",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "plugin requirements",
+        "ok": true,
+        "detail": "usdAeco 0.9.5, usdAecoAxis 0.1.5, usdAecoBuildUp 0.2.5, usdAecoWall 0.2.5"
+      },
+      {
+        "name": "schema registry",
+        "ok": true,
+        "detail": "4 applied APIs, 0 concrete types resolve"
+      },
+      {
+        "name": "codeless manifest with three dependencies",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "CanApplyAPI restrictions",
+        "ok": true,
+        "detail": "10 cases passed"
+      },
+      {
+        "name": "27 properties; five derived flags; conditional height unflagged",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "every property documented; build-up schema sublayered",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "joins are relationships; E6 port graph unchanged",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "six validators registered idempotently",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "examples compose and validate",
+        "ok": true,
+        "detail": "1 examples, 0 errors (expected 0), 0 warnings"
+      },
+      {
+        "name": "core validators detect seeded missing identity",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "example has L/T joins, door and inherited three-layer catalog",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "example has zero errors and zero warnings",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "seed WallKindMismatch detected as Warn",
+        "ok": true,
+        "detail": "{('WallKindMismatch', 'Warn'): 1}"
+      },
+      {
+        "name": "seed WallMissingAxis detected as Error",
+        "ok": true,
+        "detail": "{('WallMissingAxis', 'Error'): 1}"
+      },
+      {
+        "name": "seed WallJoinAsymmetric detected as Warn",
+        "ok": true,
+        "detail": "{('WallJoinAsymmetric', 'Warn'): 1}"
+      },
+      {
+        "name": "seed WallJoinedEndExtended detected as Warn",
+        "ok": true,
+        "detail": "{('WallJoinedEndExtended', 'Warn'): 1}"
+      },
+      {
+        "name": "seed WallOpeningOutsideHost detected as Error",
+        "ok": true,
+        "detail": "{('WallJoinedEndExtended', 'Warn'): 3, ('WallOpeningOutsideHost', 'Error'): 1}"
+      },
+      {
+        "name": "seed WallSizeMismatch detected as Warn",
+        "ok": true,
+        "detail": "{('WallSizeMismatch', 'Warn'): 1}"
+      },
+      {
+        "name": "opening width crossing start caught despite origin inside",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "joined-face tolerance avoids small numerical warnings",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "geometry validators invariant under parent rigid transform",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "missing and old build-up refused",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "vanilla example probe",
+        "ok": true,
+        "detail": "11 world transforms identical; no family plugins; fallbacks, inherited section and joins readable"
+      },
+      {
+        "name": "metres importer APIs, axis reuse and reciprocal joins",
+        "ok": true,
+        "detail": "{\"AecoBuildUpAPI\": 1, \"AecoOpeningAPI\": 1, \"AecoWallAPI\": 2, \"axesReused\": 2, \"catalogsCreated\": 0, \"fillings\": 1, \"joinTargets\": 2, \"layerFunctionsOther\": 0, \"missingAxes\": 0, \"openingDimensionsUnavailable\": 0, \"propsBlocked\": 12, \"unmatched\": 0, \"unsupportedJoins\": 0, \"unsupportedLocationLines\": 0}"
+      },
+      {
+        "name": "metres imported stage validates",
+        "ok": true,
+        "detail": "0 errors, 0 warnings"
+      },
+      {
+        "name": "metres SI dimensions and property promotion",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "metres input files unchanged and no axis opinions in kind",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "metres opening dimensions and placement",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "metres promoted net and gross quantities",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "metres muting kind recovers core composition",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "new output refusal",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "vanilla importer probe",
+        "ok": true,
+        "detail": "imported layered stage composes without plugins"
+      },
+      {
+        "name": "aeco-wall-import CLI",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "all six location lines in both direction senses",
+        "ok": true,
+        "detail": "12 IFC usage mappings"
+      },
+      {
+        "name": "arbitrary usage offset blocked and counted",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "millimetres importer APIs, axis reuse and reciprocal joins",
+        "ok": true,
+        "detail": "{\"AecoBuildUpAPI\": 1, \"AecoOpeningAPI\": 1, \"AecoWallAPI\": 2, \"axesReused\": 2, \"catalogsCreated\": 0, \"fillings\": 1, \"joinTargets\": 2, \"layerFunctionsOther\": 0, \"missingAxes\": 0, \"openingDimensionsUnavailable\": 0, \"propsBlocked\": 12, \"unmatched\": 0, \"unsupportedJoins\": 0, \"unsupportedLocationLines\": 0}"
+      },
+      {
+        "name": "millimetres imported stage validates",
+        "ok": true,
+        "detail": "0 errors, 0 warnings"
+      },
+      {
+        "name": "millimetres SI dimensions and property promotion",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "millimetres input files unchanged and no axis opinions in kind",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "millimetres opening dimensions and placement",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "millimetres promoted net and gross quantities",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "millimetres muting kind recovers core composition",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "schema unchanged from v0.1.2 via Sdf",
+        "ok": true,
+        "detail": "27 property names, types, defaults, variability, custom flags, allowed tokens and derived flags"
+      },
+      {
+        "name": "validator listing uses plugin names and schema types",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "example harness",
+        "ok": true,
+        "detail": "findings and committed result match; 12375 plugin-free prims; 1 non-blank renders; source pinned; elapsed 14.208s / budget 180s"
+      },
+      {
+        "name": "example source is pinned clash release",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "published census and promotion coverage",
+        "ok": true,
+        "detail": "92 walls"
+      },
+      {
+        "name": "stage importer separates drivers and derived quantities",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "promotion preserves all published mesh topology and transforms",
+        "ok": true,
+        "detail": "3015 meshes unchanged"
+      },
+      {
+        "name": "office wall axes only in dedicated derivation",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "review excludes every extent guide and requests all purposes",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "published example composes plugin-free",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "local documentation links",
+        "ok": true,
+        "detail": "14 links resolve (anchors and remote URLs skipped)"
+      },
+      {
+        "name": "local documentation links",
+        "ok": true,
+        "detail": "20 links resolve (anchors and remote URLs skipped)"
+      },
+      {
+        "name": "local documentation links",
+        "ok": true,
+        "detail": "10 links resolve (anchors and remote URLs skipped)"
+      },
+      {
+        "name": "term sweep",
+        "ok": true,
+        "detail": "61 text files, no matches"
+      },
+      {
+        "name": "S01",
+        "ok": true,
+        "detail": "MIT (inferred)"
+      },
+      {
+        "name": "S02",
+        "ok": true,
+        "detail": "readme"
+      },
+      {
+        "name": "S03",
+        "ok": true,
+        "detail": "metadata"
+      },
+      {
+        "name": "S04",
+        "ok": true,
+        "detail": "dependency pins"
+      },
+      {
+        "name": "S05",
+        "ok": true,
+        "detail": "flake"
+      },
+      {
+        "name": "S06",
+        "ok": true,
+        "detail": "layout"
+      },
+      {
+        "name": "S07",
+        "ok": true,
+        "detail": "global metadata"
+      },
+      {
+        "name": "S08",
+        "ok": true,
+        "detail": "classes"
+      },
+      {
+        "name": "S09",
+        "ok": true,
+        "detail": "namespaces"
+      },
+      {
+        "name": "S10",
+        "ok": true,
+        "detail": "applicability"
+      },
+      {
+        "name": "S11",
+        "ok": true,
+        "detail": "usdGenSchema --validate clean; compiler compatibility only"
+      },
+      {
+        "name": "S12",
+        "ok": true,
+        "detail": "resource plugin"
+      },
+      {
+        "name": "S13",
+        "ok": true,
+        "detail": "user docs"
+      },
+      {
+        "name": "S14",
+        "ok": true,
+        "detail": "validator descriptor"
+      },
+      {
+        "name": "S15",
+        "ok": true,
+        "detail": "validator tokens"
+      },
+      {
+        "name": "S16",
+        "ok": true,
+        "detail": "6 validators discovered and loaded"
+      },
+      {
+        "name": "S17",
+        "ok": true,
+        "detail": "tests"
+      },
+      {
+        "name": "S18",
+        "ok": true,
+        "detail": "companion"
+      },
+      {
+        "name": "S19",
+        "ok": true,
+        "detail": "profile"
+      },
+      {
+        "name": "S20",
+        "ok": true,
+        "detail": "usecase"
+      },
+      {
+        "name": "S21",
+        "ok": true,
+        "detail": "example files"
+      },
+      {
+        "name": "S22",
+        "ok": true,
+        "detail": "example manifest"
+      },
+      {
+        "name": "S23",
+        "ok": true,
+        "detail": "render caps"
+      },
+      {
+        "name": "S24",
+        "ok": true,
+        "detail": "1 stage roots compose without family plugins"
+      },
+      {
+        "name": "S25",
+        "ok": true,
+        "detail": "terms"
+      },
+      {
+        "name": "S26",
+        "ok": true,
+        "detail": "check contract"
+      },
+      {
+        "name": "S27",
+        "ok": true,
+        "detail": "12375 prims, 0 composition errors in relocated plugin-free result"
+      },
+      {
+        "name": "S28",
+        "ok": true,
+        "detail": "stock Embree render: 1280x800, 80464 bytes, non-uniform"
+      },
+      {
+        "name": "S29",
+        "ok": true,
+        "detail": "2 asset paths use example inputs/, archived layers or documented resolver tokens"
+      }
+    ],
+    "failed": 0,
+    "importer": {
+      "metres": {
+        "AecoWallAPI": 2,
+        "AecoOpeningAPI": 1,
+        "AecoBuildUpAPI": 1,
+        "axesReused": 2,
+        "missingAxes": 0,
+        "joinTargets": 2,
+        "unsupportedJoins": 0,
+        "unsupportedLocationLines": 0,
+        "propsBlocked": 12,
+        "unmatched": 0,
+        "fillings": 1,
+        "openingDimensionsUnavailable": 0,
+        "catalogsCreated": 0,
+        "layerFunctionsOther": 0
+      },
+      "millimetres": {
+        "AecoWallAPI": 2,
+        "AecoOpeningAPI": 1,
+        "AecoBuildUpAPI": 1,
+        "axesReused": 2,
+        "missingAxes": 0,
+        "joinTargets": 2,
+        "unsupportedJoins": 0,
+        "unsupportedLocationLines": 0,
+        "propsBlocked": 12,
+        "unmatched": 0,
+        "fillings": 1,
+        "openingDimensionsUnavailable": 0,
+        "catalogsCreated": 0,
+        "layerFunctionsOther": 0
+      }
+    },
+    "behavioral": {
+      "checks": 58,
+      "failed": 0
+    },
+    "structure": {
+      "checks": 29,
+      "failed": 0
+    }
+  },
+  "pytest": {
+    "passed": 24,
+    "failed": 0,
+    "source_run": true,
+    "setuptools_required": false
+  },
+  "public_tags": [
+    {
+      "repo": "usdaeco-toolchain",
+      "ref": "v0.3.10",
+      "exists": true,
+      "public_revision": "6328e1b5e63f89ea87984ad240b5c3ca37974795",
+      "returncode": 0
+    },
+    {
+      "repo": "usdaeco-core",
+      "ref": "v0.9.5",
+      "exists": true,
+      "public_revision": "784e4a77b9b6e8340cf35f221332bc14dd9e5f20",
+      "returncode": 0
+    },
+    {
+      "repo": "usdaeco-axis",
+      "ref": "v0.1.5",
+      "exists": null,
+      "public_revision": null,
+      "returncode": 128,
+      "outcome": "anonymous Git lookup requires credentials; public availability not proven",
+      "http_status": 404
+    },
+    {
+      "repo": "usdaeco-buildup",
+      "ref": "v0.2.5",
+      "exists": null,
+      "public_revision": null,
+      "returncode": 128,
+      "outcome": "anonymous Git lookup requires credentials; public availability not proven",
+      "http_status": 404
+    },
+    {
+      "repo": "usdaeco-ifc",
+      "ref": "v0.2.2",
+      "exists": null,
+      "public_revision": null,
+      "returncode": 128,
+      "outcome": "anonymous Git lookup requires credentials; public availability not proven",
+      "http_status": 404
+    },
+    {
+      "repo": "usdaeco-datacentre",
+      "ref": "v0.4.8",
+      "exists": null,
+      "public_revision": null,
+      "returncode": 128,
+      "outcome": "anonymous Git lookup requires credentials; public availability not proven",
+      "http_status": 404
+    },
+    {
+      "repo": "aeco-toolchain",
+      "ref": "v0.4.0",
+      "exists": true,
+      "public_revision": "afbea7ce2b012e55af54047311fad37339eb56df",
+      "returncode": 0
+    },
+    {
+      "repo": "usdaeco-core",
+      "ref": "v0.9.2",
+      "exists": true,
+      "public_revision": "75282989be3fdecfa778465cb57a7f9530ce506e",
+      "returncode": 0
+    }
+  ],
+  "nix": {
+    "attempts": 1,
+    "returncode": null,
+    "timeout": true,
+    "elapsed_seconds": 120.029,
+    "offline": true,
+    "no_write_lock_file": true,
+    "local_source_overrides": true,
+    "current_platform_outputs_evaluated": true,
+    "build_complete": false
+  },
+  "final_document_checks": [
+    {
+      "name": "local documentation links",
+      "ok": true,
+      "detail": "15 links resolve (anchors and remote URLs skipped)"
+    },
+    {
+      "name": "local documentation links",
+      "ok": true,
+      "detail": "23 links resolve (anchors and remote URLs skipped)"
+    },
+    {
+      "name": "local documentation links",
+      "ok": true,
+      "detail": "10 links resolve (anchors and remote URLs skipped)"
+    },
+    {
+      "name": "publication sweep",
+      "ok": true,
+      "detail": "70 files, 2959121 bytes, 0 findings"
+    }
+  ],
+  "pin_sweep": {
+    "direct_tag_urls": 6,
+    "checked_revisions": 6,
+    "previous_public_org_references": 0,
+    "family_commit_hash_refs": 0,
+    "git_diff_check": true
+  }
+}

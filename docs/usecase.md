@@ -110,7 +110,7 @@ widths. A fresh process checks plugin-free composition and fallbacks.
 
 ## 6 The example on the demo data centre
 
-Facility `demo-datacentre-01`, release v0.4.5, variant `clash`. The runner
+Facility `demo-datacentre-01`, release v0.4.8, variant `clash`. The runner
 checks every published layer's size and SHA-256 against `dc.manifest.json`
 and compares the whole-stage census to its counts. Base totals are read
 from that manifest. It has no wall-specific census, so the following
@@ -171,14 +171,14 @@ library remain outside this release. Stage-only promotion cannot recover
 missing topology or the original compound construction from a width.
 
 The library declares both wall and opening class prefixes and namespaces.
-Toolchain v0.3.5 validates the retained `AecoOpeningAPI` contract through
-the shared structure rules. See [status and deviations](status.md).
+Toolchain v0.3.10 validates the retained `AecoOpeningAPI` contract through
+the shared structure rules. See [status and deviations](public-repin-verification.md).
 
 ## 9 Status
 
-Version 0.2.2 preserves the v0.1.2 schema contract and all 46 inherited
+Version 0.2.5 preserves the v0.1.2 schema contract and all 46 inherited
 checks, and publishes the flattened example with its original layers and
 a stock USD render.
-[Measured status](status.md) records checks, tests, raw lint, Nix and the
+[Measured status](public-repin-verification.md) records checks, tests, raw lint, Nix and the
 remaining limitations. The schema plugin is codeless; validation is a Python
 UsdValidation plugin. Outputs compose without family plugins.

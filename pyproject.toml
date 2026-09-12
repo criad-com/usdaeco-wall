@@ -4,9 +4,9 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "usdaeco-wall"
-version = "0.2.4"
+version = "0.2.5"
 requires-python = ">=3.11"
-dependencies = ["usdaeco-toolchain>=0.3.8,<0.4"]
+dependencies = ["usdaeco-toolchain>=0.3.10,<0.4"]
 
 [project.scripts]
 aeco-wall = "usdaeco_wall.cli:main"

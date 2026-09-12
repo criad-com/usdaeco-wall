@@ -1,7 +1,7 @@
 {
   "actual_findings_sha256": "66146b3f3d231a49d9cb0cf4533341fccb7970cb19173194a9f2def4219269f5",
   "datacentre": {
-    "ref": "v0.4.5",
+    "ref": "v0.4.8",
     "variant": "clash"
   },
   "facility": "demo-datacentre-01",
@@ -9,33 +9,39 @@
   "pins": {
     "axis": {
       "library": "usdAecoAxis",
-      "ref": "v0.1.2",
-      "repo": "usdaeco-axis"
+      "ref": "v0.1.5",
+      "repo": "usdaeco-axis",
+      "revision": "ecff1d98bcc45c22fcceefd453374671900793ae"
     },
     "buildup": {
       "library": "usdAecoBuildUp",
-      "ref": "v0.2.1",
-      "repo": "usdaeco-buildup"
+      "ref": "v0.2.5",
+      "repo": "usdaeco-buildup",
+      "revision": "99ac95080bf4d1403d410b356c4645c3f251aa40"
     },
     "core": {
       "library": "usdAeco",
-      "ref": "v0.9.2",
-      "repo": "usdaeco-core"
+      "ref": "v0.9.5",
+      "repo": "usdaeco-core",
+      "revision": "683adc3280254bc71b396a9c64a359cc708788f4"
     },
     "datacentre": {
       "library": null,
-      "ref": "v0.4.5",
-      "repo": "usdaeco-datacentre"
+      "ref": "v0.4.8",
+      "repo": "usdaeco-datacentre",
+      "revision": "9e22b14c4909e50806805e735f93b1b425ac48cb"
     },
     "ifc": {
       "library": null,
-      "ref": "v0.2.0",
-      "repo": "usdaeco-ifc"
+      "ref": "v0.2.2",
+      "repo": "usdaeco-ifc",
+      "revision": "8eb72e89af15e8642d914948384fe73038cc7817"
     },
     "toolchain": {
       "library": null,
-      "ref": "v0.3.8",
-      "repo": "usdaeco-toolchain"
+      "ref": "v0.3.10",
+      "repo": "usdaeco-toolchain",
+      "revision": "59d3da5ff5114089b54efaaae38efdd7fe1b8e73"
     }
   },
   "render_purposes": [
@@ -58,13 +64,13 @@
       {
         "bytes": 690,
         "path": "result/README.md",
-        "sha256": "c4da1bd8a66c6a035661bda4e9850107ee6435ad24db09a21b090e4294ebb45f"
+        "sha256": "a15196697ceb17bb3373a3c60dbda969e00063f8b1324dc571d7ea7db49632fe"
       },
       {
         "bytes": 1685119,
-        "normalized_sha256": "558ca668839024f07a045ddc934df01632bdb51cc0730a407a998c2d2817b52e",
+        "normalized_sha256": "54fc035ea661f82af3f1f1524b45915777e2fe220482aa59efb036c4ded57f74",
         "path": "result/example.usdc",
-        "sha256": "de391ec9468a6eb0df079651b5f8653fa37bdae9c0f44bf38ed451e1a08b5847"
+        "sha256": "eb3e1daae2a6906d267ce544a47cbc024c7f7df779d4d674f1ba325dfca95f90"
       },
       {
         "bytes": 263,
@@ -74,7 +80,7 @@
       {
         "bytes": 24011,
         "path": "result/layers/out/axis.derived.usda",
-        "sha256": "29a9c0139959217062bb421752bd8c253313485bf04f32403058c80f2c83b0e5"
+        "sha256": "dd8d528078fadb96daa90de82ab7dc71a442f3745d25dfb4580b73f3407ad52a"
       },
       {
         "bytes": 649080,
@@ -84,12 +90,12 @@
       {
         "bytes": 23094,
         "path": "result/layers/out/wall.drivers.derived.usda",
-        "sha256": "ceaf315ddd598080c1bba510fd53f4cdd8cfb9d43b53583c8c5f8b7d7847aa2f"
+        "sha256": "c92be157b6ca9c7ec0d97aa0e53eabf25de706843471571e5d1f1215e7add79b"
       },
       {
         "bytes": 86392,
         "path": "result/layers/out/wall.drivers.usda",
-        "sha256": "982076dffd0418b9c28b83e851cb289a3f722ec22c1b6ee8c57650b92c98f924"
+        "sha256": "8dfd7e405bcfffa07286b46b32af422ef66fe22d1f0b036e7bd4338d691db7f0"
       },
       {
         "bytes": 80464,

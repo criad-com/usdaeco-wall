@@ -269,7 +269,7 @@ print(json.dumps(transforms))
         composed = Usd.Stage.Open(str(example_out/'example.usda'))
         run_manifest = json.loads((example_out/'manifest.json').read_text())
         report.check('example source is pinned clash release', run_manifest['source']['mode']=='pinned' and
-                     run_manifest['datacentre']=={'ref':'v0.4.5','variant':'clash'})
+                     run_manifest['datacentre']=={'ref':json.loads((ROOT/'dependencies.json').read_text())['repos']['datacentre']['ref'],'variant':'clash'})
         report.check('published census and promotion coverage', source_counts(original)==published_manifest['counts'] and
                      len(list(iter_walls(promoted)))==len(classified_walls(original)), str(len(classified_walls(original)))+' walls')
         wall_layer = Sdf.Layer.FindOrOpen(str(example_out/'wall.drivers.usda'))
@@ -286,7 +286,7 @@ print(json.dumps(transforms))
                 UsdGeom.Xformable(original.GetPrimAtPath(p)).ComputeLocalToWorldTransform(Usd.TimeCode.Default())==
                 UsdGeom.Xformable(promoted.GetPrimAtPath(p)).ComputeLocalToWorldTransform(Usd.TimeCode.Default()) for p in body_paths),
                 str(len(body_paths))+' meshes unchanged')
-        guides=[p for p in composed.Traverse() if p.IsA(UsdGeom.BasisCurves) and p.GetAttribute('aeco:derived:stamp').Get()=='aeco-axis 0.1.2']
+        guides=[p for p in composed.Traverse() if p.IsA(UsdGeom.BasisCurves) and p.GetAttribute('aeco:derived:stamp').Get()=='aeco-axis 0.1.3']
         report.check('office wall axes only in dedicated derivation',len(guides)==len(office_walls(promoted)) and
                      all(p.GetParent().HasAPI('AecoWallAPI') and p.GetAttribute('purpose').Get()=='guide' for p in guides))
         extent=[p for p in composed.Traverse() if p.GetAttribute('aeco:derived:role').Get()=='extent']

@@ -21,7 +21,7 @@ names, types, defaults, allowed tokens and derived flags from v0.1.2.
 
 ## The example
 
-The published `clash` stage from `usdaeco-datacentre` v0.4.5 supplies
+The published `clash` stage from `usdaeco-datacentre` v0.4.8 supplies
 `demo-datacentre-01`. Wall promotion → L01 axis derivation → validation →
 a bounds-framed corridor/meeting-room corner:
 
@@ -56,26 +56,35 @@ or modifies siblings.
 
 ```sh
 export PYTHON=python3
-export TOOLCHAIN_DIR=../usdaeco-toolchain
-export AECO_CORE_ROOT=../usdaeco-core
-mkdir -p out/pinned/usdaeco-axis out/pinned/usdaeco-datacentre
-git -C ../usdaeco-axis archive v0.1.2 | tar -x -C out/pinned/usdaeco-axis
-git -C ../usdaeco-datacentre archive v0.4.5 library.json dist/clash | tar -x -C out/pinned/usdaeco-datacentre
+export PYTHONDONTWRITEBYTECODE=1
+for pin in toolchain:v0.3.10 core:v0.9.5 axis:v0.1.5 buildup:v0.2.5 ifc:v0.2.2 datacentre:v0.4.8; do
+  repo="usdaeco-${pin%:*}"
+  mkdir -p "out/pinned/$repo"
+  git -C "../$repo" archive "${pin#*:}" | tar -x -C "out/pinned/$repo"
+done
+export TOOLCHAIN_DIR="$PWD/out/pinned/usdaeco-toolchain"
+export AECO_CORE_ROOT="$PWD/out/pinned/usdaeco-core"
 export AECO_AXIS_ROOT="$PWD/out/pinned/usdaeco-axis"
-export AXIS_PLUGIN_DIR="$AECO_AXIS_ROOT/usdAecoAxis"
+export AECO_BUILDUP_ROOT="$PWD/out/pinned/usdaeco-buildup"
+export AECO_IFC_ROOT="$PWD/out/pinned/usdaeco-ifc"
 export AECO_DATACENTRE_ROOT="$PWD/out/pinned/usdaeco-datacentre"
+export CORE_PLUGIN_DIR="$AECO_CORE_ROOT/usdAeco"
+export AXIS_PLUGIN_DIR="$AECO_AXIS_ROOT/usdAecoAxis"
+export BUILDUP_PLUGIN_DIR="$AECO_BUILDUP_ROOT/usdAecoBuildUp"
 bash build.sh --generate-only
 bash build.sh --install-root out
+env -u PYTHONPATH "$PYTHON" examples/datacentre/run.py --publish
 env -u PYTHONPATH PYTHONPATH="$AECO_CORE_ROOT:$PWD" "$PYTHON" check.py
 env -u PYTHONPATH "$PYTHON" -m pytest -q
-env -u PYTHONPATH "$PYTHON" examples/datacentre/run.py --publish
 ```
 
-The two archives preserve the tested tags if sibling checkouts advance.
-Use these extraction locations for regeneration: the diffable driver
-layer retains its original relative source path. The standalone crate
-has no external dependencies. All remaining siblings use the exact
-releases in `dependencies.json`; the toolchain pin is v0.3.8.
+The six archives preserve the tested tags if sibling checkouts advance;
+their committed flat plugin resources need no dependency rebuild. Each
+revision in `dependencies.json` records the checked source commit; public
+flake inputs resolve by tag because public releases have independent Git
+history. The toolchain pin is v0.3.10, whose build input uses aeco-toolchain
+v0.4.0. Library requirement ranges are unchanged. The standalone crate has
+no external dependencies.
 
 `usdrecord` must be on `PATH` for the CPU render. Core is registered first.
 `CORE_PLUGIN_DIR`, `AXIS_PLUGIN_DIR` and `BUILDUP_PLUGIN_DIR` can name
@@ -128,21 +137,17 @@ Route K; `examples/datacentre/` records the pinned run. `out/` is transient.
 
 ## Status
 
-Version **0.2.4** uses public repository names under **criad-com** and toolchain
-**v0.3.8**. The full gate passes **87 checks, 0 failed, 0 not run**;
-all **29 structure rules** pass, including S05 and S25. **24 pytest tests pass**,
-and all eight core validators load through UsdValidation.
-
-The committed crate and all PNGs remain byte-identical to v0.2.3. The example
-manifest records the updated toolchain pin and two refreshed producer stamps;
-the result still totals **2,549,113 bytes**. S27/S28 and the fresh-result
-comparison pass. See [release verification](docs/public-name-verification.md)
-for the measured acceptance and metadata-only deviation, and
-[relocation verification](docs/relocation-verification.md) for v0.2.3 evidence.
-
-Nix remains unproven: the single flake-check attempt used the corrected public
-axis v0.1.2 URL and received HTTP 404 before building. Native regeneration and
-live round trips were not run for this public-name patch.
+Version **0.2.5** applies the six requested public release tags. The gate
+passes **87 checks, 0 failed, 0 not run**; all **29 structure rules** and
+**24 pytest tests** pass. Geometry and committed PNGs are unchanged.
+Four public tag pages currently return HTTP 404; public installability
+and a completed Nix build remain [not proven](BLOCKED.md).
+[Release verification](docs/public-repin-verification.md) records the gate,
+source-run tests, regenerated outputs and the single offline Nix attempt.
+Earlier [public-name](docs/public-name-verification.md) and
+[relocation](docs/relocation-verification.md) reports retain their historical
+pins and measurements. Native regeneration and live round trips remain
+outside this release.
 
 ## Licence
 

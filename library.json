@@ -1,6 +1,6 @@
 {
   "name": "usdAecoWall",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "kind": "usecase",
   "tier": "kind",
   "requires": {

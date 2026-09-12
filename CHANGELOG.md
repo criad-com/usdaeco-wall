@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.2.5
+
+- public re-pin: usdaeco-toolchain v0.3.10, usdaeco-core v0.9.5,
+  usdaeco-axis v0.1.5, usdaeco-buildup v0.2.5, usdaeco-ifc v0.2.2
+  and usdaeco-datacentre v0.4.8; record each checked revision.
+- Retain supported library requirement ranges; require toolchain >=0.3.10,<0.4
+  for the release-tag and package-version checks.
+- Republish the example with refreshed provenance and producer stamps;
+  preserve schema, geometry, driver values and findings.
+
 ## 0.2.4
 
 - public names → github.com/criad-com; use toolchain v0.3.8.

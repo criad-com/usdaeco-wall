@@ -1,5 +1,8 @@
 # Verification status
 
+For **v0.2.5**, see [public re-pin verification](public-repin-verification.md).
+The measurements below are historical.
+
 Version **0.2.1** (historical) uses toolchain **v0.3.1**. Version **0.2.2**
 passes **86 checks, 0 failed** with toolchain **v0.3.5**; see the
 [README](../README.md#status). The historical integrated command
@@ -41,7 +44,8 @@ The [README](../README.md#build-and-check) provides the exact pinned setup.
 - MIT licensing and its requested copyright notice conflict with toolchain
   v0.3.1: S01 requires Apache-2.0 text; S25 rejects the copyright name at
   `LICENSE:3`. These raw failures are retained, with no lint bypass.
-  [The remaining blocker](../BLOCKED.md) needs a shared toolchain release.
+  This historical licence-lint blocker was resolved by later shared toolchain
+  releases; see [v0.2.4 verification](public-name-verification.md).
 
 - Nix input resolution failed before a build. No Nix build or platform
   compatibility claim is made, and no retry was attempted.
