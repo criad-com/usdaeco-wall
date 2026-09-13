@@ -2,7 +2,7 @@
 (
     customLayerData = {
         string "aeco:wall:layer" = "drivers"
-        string "aeco:wall:producer" = "aeco-wall 0.2.5"
+        string "aeco:wall:producer" = "aeco-wall 0.2.6"
         string "aeco:wall:sectionEvidence" = "equivalent single layer from reported SI width; materials and priorities unknown"
     }
     defaultPrim = "demo_datacentre_01"

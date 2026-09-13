@@ -2,7 +2,7 @@
 (
     customLayerData = {
         string "aeco:wall:layer" = "derived"
-        string "aeco:wall:producer" = "aeco-wall 0.2.5"
+        string "aeco:wall:producer" = "aeco-wall 0.2.6"
     }
 )
 

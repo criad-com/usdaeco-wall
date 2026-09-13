@@ -92,8 +92,8 @@ published v0.9.2 tag. No lock file was written, and Nix was not retried.
 - Public availability is **not proven** for axis v0.1.5, build-up v0.2.5,
   IFC v0.2.2 and data-centre v0.4.8: anonymous Git probes could not read
   them, and all four public tag pages returned HTTP 404 on 2026-09-12.
-  No alternative pins were substituted. [The blocker](../BLOCKED.md)
-  records the publisher's remaining action before online resolution.
+  No alternative pins were substituted. The four requested tags must be
+  publicly readable before online resolution.
 - Nix evaluated current-platform outputs and began dependency builds but
   exceeded the 120-second limit. Completed builds and Linux execution
   remain unproven; local overrides do not prove public resolution.

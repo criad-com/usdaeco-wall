@@ -141,7 +141,7 @@ Version **0.2.5** applies the six requested public release tags. The gate
 passes **87 checks, 0 failed, 0 not run**; all **29 structure rules** and
 **24 pytest tests** pass. Geometry and committed PNGs are unchanged.
 Four public tag pages currently return HTTP 404; public installability
-and a completed Nix build remain [not proven](BLOCKED.md).
+and a completed Nix build remain not proven.
 [Release verification](docs/public-repin-verification.md) records the gate,
 source-run tests, regenerated outputs and the single offline Nix attempt.
 Earlier [public-name](docs/public-name-verification.md) and

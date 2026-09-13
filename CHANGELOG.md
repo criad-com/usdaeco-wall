@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.6
+
+- Remove obsolete documentation links while retaining the statement that
+  public installability and a completed Nix build remain not proven.
+
 ## 0.2.5
 
 - public re-pin: usdaeco-toolchain v0.3.10, usdaeco-core v0.9.5,
@@ -57,3 +62,5 @@
 
 - Retain the released wall promotion, six validation rules and profile
   checks as the migration's 46-check floor.
+
+- Removed the tracked status note from the repository; its statement lives in the README ("not proven").
